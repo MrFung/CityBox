@@ -34,30 +34,30 @@
   [self.tabBarController.tabBar topBorderWithColor:[UIColor mainGrayColor] height:0.5];
   
   UINavigationController *scheduleViewController = [UINavigationController wrappingRootController:[ScheduleViewController create]];
-  UIImage *scheduleVCImage = [UIImage imageNamed:@""];
-  UIImage *scheduleVCHLImage = [UIImage imageNamed:@""];
-  UITabBarItem *scheduleTabBarItem = [[UITabBarItem alloc] initWithTitle:@"Tab1" image:scheduleVCImage selectedImage:scheduleVCHLImage];
+  UIImage *scheduleVCImage = [UIImage imageNamed:@"tabbar_schedule_unselected"];
+  UIImage *scheduleVCHLImage = [UIImage imageNamed:@"tabbar_schedule"];
+  UITabBarItem *scheduleTabBarItem = [[UITabBarItem alloc] initWithTitle:@"课表" image:scheduleVCImage selectedImage:scheduleVCHLImage];
   scheduleTabBarItem.tag = 1;
   scheduleViewController.tabBarItem = scheduleTabBarItem;
   
   UINavigationController *canteenViewController = [UINavigationController wrappingRootController:[CanteenViewController create]];
-  UIImage *canteenVCImage = [UIImage imageNamed:@""];
+  UIImage *canteenVCImage = [UIImage imageNamed:@"tabbar_canteen_unselected"];
   UIImage *canteenVCHLImage = [UIImage imageNamed:@""];
-  UITabBarItem *canteenTabBarItem = [[UITabBarItem alloc] initWithTitle:@"Tab2" image:canteenVCImage selectedImage:canteenVCHLImage];
+  UITabBarItem *canteenTabBarItem = [[UITabBarItem alloc] initWithTitle:@"食堂" image:canteenVCImage selectedImage:canteenVCHLImage];
   canteenTabBarItem.tag = 2;
   canteenViewController.tabBarItem = canteenTabBarItem;
   
   UINavigationController *libraryViewController = [UINavigationController wrappingRootController:[LibraryViewController create]];
-  UIImage *libraryVCImage = [UIImage imageNamed:@""];
-  UIImage *libraryVCHLImage = [UIImage imageNamed:@""];
-  UITabBarItem *libraryTabBarItem = [[UITabBarItem alloc] initWithTitle:@"Tab3" image:libraryVCImage selectedImage:libraryVCHLImage];
+  UIImage *libraryVCImage = [UIImage imageNamed:@"babbar_library_unselected"];
+  UIImage *libraryVCHLImage = [UIImage imageNamed:@"babbar_library"];
+  UITabBarItem *libraryTabBarItem = [[UITabBarItem alloc] initWithTitle:@"图书" image:libraryVCImage selectedImage:libraryVCHLImage];
   libraryTabBarItem.tag = 3;
   libraryViewController.tabBarItem = libraryTabBarItem;
   
   UINavigationController *profileViewController = [UINavigationController wrappingRootController:[ProfileViewController create]];
-  UIImage *profileVCImage = [UIImage imageNamed:@""];
-  UIImage *profileVCHLImage = [UIImage imageNamed:@""];
-  UITabBarItem *profileTabBarItem = [[UITabBarItem alloc] initWithTitle:@"Tab4" image:profileVCImage selectedImage:profileVCHLImage];
+  UIImage *profileVCImage = [UIImage imageNamed:@"tabbar_me_unselected"];
+  UIImage *profileVCHLImage = [UIImage imageNamed:@"tabbar_me"];
+  UITabBarItem *profileTabBarItem = [[UITabBarItem alloc] initWithTitle:@"我的" image:profileVCImage selectedImage:profileVCHLImage];
   profileTabBarItem.tag = 4;
   profileViewController.tabBarItem = profileTabBarItem;
   
