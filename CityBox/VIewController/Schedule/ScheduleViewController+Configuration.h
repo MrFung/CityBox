@@ -10,4 +10,7 @@
 
 @interface ScheduleViewController (Configuration)
 
+- (void)initProperties;
+- (void)configureView;
+
 @end

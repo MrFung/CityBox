@@ -10,4 +10,7 @@
 
 @interface ProfileViewController (Configuration)
 
+- (void)initProperties;
+- (void)configureView;
+
 @end

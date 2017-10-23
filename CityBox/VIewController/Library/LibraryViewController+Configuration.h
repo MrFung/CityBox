@@ -10,4 +10,7 @@
 
 @interface LibraryViewController (Configuration)
 
+- (void)initProperties;
+- (void)configureView;
+
 @end

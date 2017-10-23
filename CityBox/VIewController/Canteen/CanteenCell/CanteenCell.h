@@ -13,11 +13,11 @@
 
 @property (strong, nonatomic) CanteenInfo *canteenInfo;
 
-@property (weak, nonatomic) IBOutlet UILabel *_id;
-@property (weak, nonatomic) IBOutlet UILabel *_location;
-@property (weak, nonatomic) IBOutlet UILabel *_floor;
-@property (weak, nonatomic) IBOutlet UILabel *_name;
-@property (weak, nonatomic) IBOutlet UILabel *_telephone;
+@property (weak, nonatomic) IBOutlet UILabel *menuId;
+@property (weak, nonatomic) IBOutlet UILabel *location;
+@property (weak, nonatomic) IBOutlet UILabel *floor;
+@property (weak, nonatomic) IBOutlet UILabel *name;
+@property (weak, nonatomic) IBOutlet UILabel *telephone;
 
 - (void) updateCellWithCanteenInfo:(CanteenInfo *)canteenInfo;
 

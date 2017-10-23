@@ -10,4 +10,20 @@
 
 @implementation ScheduleViewController (Configuration)
 
+#pragma mark - Public Methods
+
+- (void)initProperties {
+}
+
+- (void)configureView {
+  [self configureViewEdges];
+}
+
+#pragma mark - Private Methods
+
+- (void)configureViewEdges {
+  self.edgesForExtendedLayout = UIRectEdgeNone;
+  self.tabBarController.edgesForExtendedLayout = UIRectEdgeNone;
+}
+
 @end

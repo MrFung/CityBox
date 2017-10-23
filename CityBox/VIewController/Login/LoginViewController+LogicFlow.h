@@ -10,4 +10,6 @@
 
 @interface LoginViewController (LogicFlow)
 
+- (void)login;
+
 @end

@@ -10,4 +10,22 @@
 
 @interface UINavigationController (Extend)
 
++ (instancetype)wrappingRootController:(UIViewController *)viewController;
++ (UINavigationController *)getRootNavigationController;
+
+- (void)pushViewControllerFromLeft:(UIViewController*)viewController;
+- (void)pushViewControllerFromBottom:(UIViewController*)viewController;
+- (void)pushViewControllerFromTop:(UIViewController*)viewController;
+- (void)pushViewControllerFromFade:(UIViewController *)viewController;
+
+- (void)popViewControllerTrendRight;
+- (void)popViewControllerTrendTop;
+- (void)popViewControllerTrendBottom;
+- (void)popViewControllerTrendFade ;
+
+- (void)popToViewControllerTrendRight:(UIViewController *)viewController;
+- (void)popToViewControllerTrendTop:(UIViewController *)viewController;
+- (void)popToViewControllerTrendBottom:(UIViewController *)viewController;
+- (void)popToViewControllerTrendFade:(UIViewController *)viewController;
+
 @end

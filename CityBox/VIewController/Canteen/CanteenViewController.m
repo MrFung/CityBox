@@ -6,21 +6,21 @@
 //  Copyright © 2017年 郭枫. All rights reserved.
 //
 
-#import "HomeViewController.h"
-#import "HomeViewController+Configuration.h"
-#import "HomeViewController+LogicFlow.h"
+#import "CanteenViewController.h"
+#import "CanteenViewController+Configuration.h"
+#import "CanteenViewController+LogicFlow.h"
 #import "CanteenCell.h"
 #import "UIView+FrameMethods.h"
 #import "IphoneType.h"
 
-@interface HomeViewController ()
+@interface CanteenViewController ()
 
 @end
 
-@implementation HomeViewController
+@implementation CanteenViewController
 
 + (instancetype)create {
-  return [HomeViewController createWithStoryboardName:StoryboardNameHome];
+  return [CanteenViewController createWithStoryboardName:StoryboardNameHome];
 }
 
 #pragma mark - ViewController LifeCycle

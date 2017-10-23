@@ -7,7 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
-@interface TabBarControllerWrapping : NSObject
+@interface TabBarControllerWrapping : NSObject <UITabBarControllerDelegate>
+
+@property (nonatomic, strong) UITabBarController *tabBarController;
+
++ (instancetype)sharedInstance;
+- (UITabBarController *)wrappedTabBarController;
 
 @end

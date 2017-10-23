@@ -24,11 +24,11 @@
 #pragma mark - Private Methods
 
 - (void)reloadData {
-  self._id.text = self.canteenInfo._id;
-  self._location.text = self.canteenInfo._location;
-  self._floor.text = self.canteenInfo._floor;
-  self._name.text = self.canteenInfo._name;
-  self._telephone.text = self.canteenInfo._telephone;
+  self.menuId.text = self.canteenInfo.menuId;
+  self.location.text = self.canteenInfo.location;
+  self.floor.text = self.canteenInfo.floor;
+  self.name.text = self.canteenInfo.name;
+  self.telephone.text = self.canteenInfo.telephone;
 }
 
 @end

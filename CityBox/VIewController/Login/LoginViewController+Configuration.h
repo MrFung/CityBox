@@ -10,4 +10,7 @@
 
 @interface LoginViewController (Configuration)
 
+- (void)initProperties;
+- (void)configureView;
+
 @end

@@ -7,7 +7,8 @@
 //
 
 #import "LoginViewController.h"
-#import "HomeViewController.h"
+#import "LoginViewController+LogicFlow.h"
+#import "CanteenViewController.h"
 
 @interface LoginViewController ()
 
@@ -15,23 +16,29 @@
 
 @implementation LoginViewController
 
++ (instancetype)create {
+  return [LoginViewController createWithStoryboardName:StoryboardNameLogin];
+}
+
 #pragma mark - ViewController LifeCycle
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
+  [super viewDidLoad];
+//  [self login];
 }
 
 #pragma mark - IBAction Methods
 
 - (IBAction)loginButtonClicked:(id)sender {
-  [self showHomeViewController];
+  [BaseViewController resetTabThenSelectedHome];
+  [self login];
 }
 
 #pragma mark - Privite Methods
 
-- (void)showHomeViewController {
-  HomeViewController *homeViewController = [HomeViewController create];
-  [self.navigationController pushViewController:homeViewController animated:YES];
+- (void)showCanteenViewController {
+  CanteenViewController *canteenViewController = [CanteenViewController create];
+  [self.navigationController pushViewController:canteenViewController animated:YES];
 }
 
 @end

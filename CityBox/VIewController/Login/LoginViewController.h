@@ -7,8 +7,9 @@
 //
 
 #import "BaseViewController.h"
+#import "ApiService.h"
 
-@interface LoginViewController : BaseViewController
+@interface LoginViewController : BaseViewController <ApiServiceDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextField *userNameTextField;
 @property (weak, nonatomic) IBOutlet UITextField *passWordTextField;

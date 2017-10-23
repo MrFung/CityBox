@@ -1,14 +1,14 @@
 //
-//  HomeViewController+Configuration.m
+//  CanteenViewController+Configuration.m
 //  test
 //
 //  Created by 郭枫 on 2017/9/29.
 //  Copyright © 2017年 郭枫. All rights reserved.
 //
 
-#import "HomeViewController+Configuration.h"
+#import "CanteenViewController+Configuration.h"
 
-@implementation HomeViewController (Configuration)
+@implementation CanteenViewController (Configuration)
 
 #pragma mark - Public Methods
 
@@ -17,10 +17,16 @@
 }
 
 - (void)configureView {
+  [self configureViewEdges];
   [self configureTableVIew];
 }
 
 #pragma mark - Private Methods
+
+- (void)configureViewEdges {
+  self.edgesForExtendedLayout = UIRectEdgeNone;
+  self.tabBarController.edgesForExtendedLayout = UIRectEdgeNone;
+}
 
 - (void)configureTableVIew {
   self.tableView.delegate = self;
