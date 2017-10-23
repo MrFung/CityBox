@@ -48,6 +48,7 @@
 		E5E8C97C1F9DE5EA005249CB /* ProfileViewController+Configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E8C97B1F9DE5EA005249CB /* ProfileViewController+Configuration.m */; };
 		E5E8C97F1F9DE669005249CB /* LoginViewController+LogicFlow.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E8C97E1F9DE669005249CB /* LoginViewController+LogicFlow.m */; };
 		E5E8C9821F9DEAB8005249CB /* LoginViewController+Configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = E5E8C9811F9DEAB8005249CB /* LoginViewController+Configuration.m */; };
+		E5E8C9841F9E048E005249CB /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E5E8C9831F9E048E005249CB /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -148,6 +149,7 @@
 		E5E8C97E1F9DE669005249CB /* LoginViewController+LogicFlow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "LoginViewController+LogicFlow.m"; sourceTree = "<group>"; };
 		E5E8C9801F9DEAB8005249CB /* LoginViewController+Configuration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LoginViewController+Configuration.h"; sourceTree = "<group>"; };
 		E5E8C9811F9DEAB8005249CB /* LoginViewController+Configuration.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "LoginViewController+Configuration.m"; sourceTree = "<group>"; };
+		E5E8C9831F9E048E005249CB /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -416,6 +418,7 @@
 				E5D81DBC1F9B4287000B2EE2 /* AppDelegate.h */,
 				E5D81DBD1F9B4287000B2EE2 /* AppDelegate.m */,
 				E5D81DCE1F9B4287000B2EE2 /* main.m */,
+				E5E8C9831F9E048E005249CB /* README.md */,
 				E5D81DCD1F9B4287000B2EE2 /* Info.plist */,
 				E5D81DC51F9B4287000B2EE2 /* CityBox.xcdatamodeld */,
 				E5D81DC81F9B4287000B2EE2 /* Assets.xcassets */,
@@ -555,6 +558,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5E8C9841F9E048E005249CB /* README.md in Resources */,
 				E5D81DC91F9B4287000B2EE2 /* Assets.xcassets in Resources */,
 				E5507F001F9D81B000FB87C6 /* Home.storyboard in Resources */,
 				E5507EFF1F9D81B000FB87C6 /* LaunchScreen.storyboard in Resources */,
