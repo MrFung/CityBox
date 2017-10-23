@@ -1,0 +1,33 @@
+//
+//  HomeViewController+Configuration.m
+//  test
+//
+//  Created by 郭枫 on 2017/9/29.
+//  Copyright © 2017年 郭枫. All rights reserved.
+//
+
+#import "HomeViewController+Configuration.h"
+
+@implementation HomeViewController (Configuration)
+
+#pragma mark - Public Methods
+
+- (void)initProperties {
+  self.canteenInfos = [NSMutableArray array];
+}
+
+- (void)configureView {
+  [self configureTableVIew];
+}
+
+#pragma mark - Private Methods
+
+- (void)configureTableVIew {
+  self.tableView.delegate = self;
+  self.tableView.dataSource =self;
+  self.tableView.tableFooterView = [[UIView alloc] init];
+  
+  [self.tableView registerNib:[UINib nibWithNibName:@"CanteenCell" bundle:nil] forCellReuseIdentifier:CanteenCellReuseId];
+}
+
+@end
