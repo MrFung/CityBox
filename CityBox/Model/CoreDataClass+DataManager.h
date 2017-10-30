@@ -10,4 +10,9 @@
 
 @interface CoreDataClass (DataManager)
 
++ (instancetype)current;
++ (instancetype)currentInContext:(NSManagedObjectContext *)context;
+
++ (void)createOrUpdateFromDictionaryData:(NSDictionary *)data completion:(void(^)(BOOL success, NSError *error))completion;
+
 @end

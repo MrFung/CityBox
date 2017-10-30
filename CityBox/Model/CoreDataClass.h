@@ -8,6 +8,12 @@
 
 #import <CoreData/CoreData.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface CoreDataClass : NSManagedObject
 
 @end
+
+NS_ASSUME_NONNULL_END
+
+#import "CoreDataClass+Properties.h"

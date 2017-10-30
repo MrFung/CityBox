@@ -10,4 +10,12 @@
 
 @implementation ApiResponse (DataExtractor)
 
+- (NSString *)userName {
+  return [self.data isKindOfClass:[NSDictionary class]] ? [self.data stringForKey:@"username"] : @"";
+}
+
+- (NSString *)passWord {
+  return [self.data isKindOfClass:[NSDictionary class]] ? [self.data stringForKey:@"password"] : @"";
+}
+
 @end

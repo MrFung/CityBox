@@ -17,6 +17,11 @@
 		E52AA37F1F9F0629006AE85F /* CoreDataClass+Properties.m in Sources */ = {isa = PBXBuildFile; fileRef = E52AA37E1F9F0629006AE85F /* CoreDataClass+Properties.m */; };
 		E52AA3821F9F079E006AE85F /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E52AA3811F9F079E006AE85F /* DataManager.m */; };
 		E52AA3851F9F07F3006AE85F /* CoreDataClass+DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E52AA3841F9F07F3006AE85F /* CoreDataClass+DataManager.m */; };
+		E52C09261FA707F30002FA87 /* CoreDataClass+Deserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = E52C09251FA707F30002FA87 /* CoreDataClass+Deserializer.m */; };
+		E52C09291FA70B440002FA87 /* DMCache.m in Sources */ = {isa = PBXBuildFile; fileRef = E52C09281FA70B440002FA87 /* DMCache.m */; };
+		E52C092C1FA70B8F0002FA87 /* DMCache+DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E52C092B1FA70B8F0002FA87 /* DMCache+DataManager.m */; };
+		E52C092F1FA70BD70002FA87 /* DMCache+Properties.m in Sources */ = {isa = PBXBuildFile; fileRef = E52C092E1FA70BD70002FA87 /* DMCache+Properties.m */; };
+		E52C09321FA70F3B0002FA87 /* DMCache+Deserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = E52C09311FA70F3B0002FA87 /* DMCache+Deserializer.m */; };
 		E5507EBF1F9D7BA400FB87C6 /* BaseDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = E5507EBD1F9D7BA400FB87C6 /* BaseDTO.m */; };
 		E5507EC21F9D7BAE00FB87C6 /* CanteenInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E5507EC11F9D7BAE00FB87C6 /* CanteenInfo.m */; };
 		E5507ECB1F9D7BB900FB87C6 /* IphoneType.m in Sources */ = {isa = PBXBuildFile; fileRef = E5507EC31F9D7BB900FB87C6 /* IphoneType.m */; };
@@ -94,6 +99,16 @@
 		E52AA3811F9F079E006AE85F /* DataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
 		E52AA3831F9F07F3006AE85F /* CoreDataClass+DataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CoreDataClass+DataManager.h"; sourceTree = "<group>"; };
 		E52AA3841F9F07F3006AE85F /* CoreDataClass+DataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CoreDataClass+DataManager.m"; sourceTree = "<group>"; };
+		E52C09241FA707F30002FA87 /* CoreDataClass+Deserializer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CoreDataClass+Deserializer.h"; sourceTree = "<group>"; };
+		E52C09251FA707F30002FA87 /* CoreDataClass+Deserializer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CoreDataClass+Deserializer.m"; sourceTree = "<group>"; };
+		E52C09271FA70B440002FA87 /* DMCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DMCache.h; sourceTree = "<group>"; };
+		E52C09281FA70B440002FA87 /* DMCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DMCache.m; sourceTree = "<group>"; };
+		E52C092A1FA70B8F0002FA87 /* DMCache+DataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DMCache+DataManager.h"; sourceTree = "<group>"; };
+		E52C092B1FA70B8F0002FA87 /* DMCache+DataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "DMCache+DataManager.m"; sourceTree = "<group>"; };
+		E52C092D1FA70BD70002FA87 /* DMCache+Properties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DMCache+Properties.h"; sourceTree = "<group>"; };
+		E52C092E1FA70BD70002FA87 /* DMCache+Properties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "DMCache+Properties.m"; sourceTree = "<group>"; };
+		E52C09301FA70F3B0002FA87 /* DMCache+Deserializer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DMCache+Deserializer.h"; sourceTree = "<group>"; };
+		E52C09311FA70F3B0002FA87 /* DMCache+Deserializer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "DMCache+Deserializer.m"; sourceTree = "<group>"; };
 		E5507EBD1F9D7BA400FB87C6 /* BaseDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseDTO.m; sourceTree = "<group>"; };
 		E5507EBE1F9D7BA400FB87C6 /* BaseDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseDTO.h; sourceTree = "<group>"; };
 		E5507EC01F9D7BAD00FB87C6 /* CanteenInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CanteenInfo.h; sourceTree = "<group>"; };
@@ -257,6 +272,16 @@
 				E52AA37E1F9F0629006AE85F /* CoreDataClass+Properties.m */,
 				E52AA3831F9F07F3006AE85F /* CoreDataClass+DataManager.h */,
 				E52AA3841F9F07F3006AE85F /* CoreDataClass+DataManager.m */,
+				E52C09241FA707F30002FA87 /* CoreDataClass+Deserializer.h */,
+				E52C09251FA707F30002FA87 /* CoreDataClass+Deserializer.m */,
+				E52C09271FA70B440002FA87 /* DMCache.h */,
+				E52C09281FA70B440002FA87 /* DMCache.m */,
+				E52C092D1FA70BD70002FA87 /* DMCache+Properties.h */,
+				E52C092E1FA70BD70002FA87 /* DMCache+Properties.m */,
+				E52C092A1FA70B8F0002FA87 /* DMCache+DataManager.h */,
+				E52C092B1FA70B8F0002FA87 /* DMCache+DataManager.m */,
+				E52C09301FA70F3B0002FA87 /* DMCache+Deserializer.h */,
+				E52C09311FA70F3B0002FA87 /* DMCache+Deserializer.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -634,6 +659,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-CityBox/Pods-CityBox-resources.sh",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
@@ -680,10 +706,12 @@
 				E52AA37C1F9F05B3006AE85F /* CoreDataClass.m in Sources */,
 				E5507EDC1F9D7BC100FB87C6 /* ApiRequest+BuildFactory.m in Sources */,
 				E52AA37F1F9F0629006AE85F /* CoreDataClass+Properties.m in Sources */,
+				E52C09321FA70F3B0002FA87 /* DMCache+Deserializer.m in Sources */,
 				E516F6E51F9D9D2500B81F63 /* UINavigationController+Extend.m in Sources */,
 				E5E8C9791F9DE5AA005249CB /* LibraryViewController+Configuration.m in Sources */,
 				E5507EDD1F9D7BC100FB87C6 /* ApiResponse.m in Sources */,
 				E5D81DC71F9B4287000B2EE2 /* CityBox.xcdatamodeld in Sources */,
+				E52C09261FA707F30002FA87 /* CoreDataClass+Deserializer.m in Sources */,
 				E5507EC21F9D7BAE00FB87C6 /* CanteenInfo.m in Sources */,
 				E5D81DCF1F9B4287000B2EE2 /* main.m in Sources */,
 				E5507ECE1F9D7BB900FB87C6 /* UIView+FrameMethods.m in Sources */,
@@ -692,6 +720,7 @@
 				E5507EDB1F9D7BC100FB87C6 /* ApiResponse+BuildFactory.m in Sources */,
 				E5507ECC1F9D7BB900FB87C6 /* NSString+Utility.m in Sources */,
 				E516F6F81F9DC3F700B81F63 /* UIColor+Utility.m in Sources */,
+				E52C092F1FA70BD70002FA87 /* DMCache+Properties.m in Sources */,
 				E5D81DBE1F9B4287000B2EE2 /* AppDelegate.m in Sources */,
 				E5507ECB1F9D7BB900FB87C6 /* IphoneType.m in Sources */,
 				E5D6A4DE1F9DDFB0003C9C97 /* ProfileViewController.m in Sources */,
@@ -699,12 +728,14 @@
 				E52AA3821F9F079E006AE85F /* DataManager.m in Sources */,
 				E5507EE61F9D7BCF00FB87C6 /* LoginViewController.m in Sources */,
 				E5507EDE1F9D7BC100FB87C6 /* ApiRequest.m in Sources */,
+				E52C09291FA70B440002FA87 /* DMCache.m in Sources */,
 				E5D6A4D51F9DD1D0003C9C97 /* ScheduleViewController.m in Sources */,
 				E5507EF01F9D7C7700FB87C6 /* CanteenViewController+Configuration.m in Sources */,
 				E516F6F51F9DC30F00B81F63 /* UIView+Utility.m in Sources */,
 				E5507EEE1F9D7C7700FB87C6 /* CanteenViewController+LogicFlow.m in Sources */,
 				E5E8C9761F9DE53D005249CB /* ScheduleViewController+Configuration.m in Sources */,
 				E5507EEF1F9D7C7700FB87C6 /* CanteenViewController.m in Sources */,
+				E52C092C1FA70B8F0002FA87 /* DMCache+DataManager.m in Sources */,
 				E516F6E21F9D9CB600B81F63 /* BaseViewController.m in Sources */,
 				E5507EDF1F9D7BC100FB87C6 /* ApiResponse+DataExtractor.m in Sources */,
 			);

@@ -26,4 +26,11 @@ typedef NS_ENUM(NSInteger, StoryboardName) {
 - (void)toast:(NSString *)message;
 - (void)toast:(NSString *)message delay:(CGFloat)delay;
 
+- (void)updateKeyboardManagerWithBottomHeight:(CGFloat)bottomHeight;
+- (void)updateKeyboardManagerWithPreviousNextHidden:(BOOL)previousNextHidden;
+- (void)updateKeyboardManagerEnableToolbar:(BOOL)enableToolbar withPreviousNextHidden:(BOOL)previousNextHidden;
+- (void)addAutoDismissKeyboardGesture;
+
+- (void)popGestureRecognizerDisable;
+
 @end

@@ -7,6 +7,11 @@
 //
 
 #import "LoginViewController+LogicFlow.h"
+#import "ApiResponse+DataExtractor.h"
+#import "CoreDataClass+DataManager.h"
+#import "DMCache+DataManager.h"
+
+NSString *const userNameIdentifier = @"userNameIdentifier";
 
 @implementation LoginViewController (LogicFlow)
 
@@ -35,8 +40,17 @@
 #pragma mark - Private Methods
 
 - (void)requestLogin {
-  ApiRequest *request = [ApiRequest requestForLogin:@"201412050" password:@"199512"];
+  ApiRequest *request = [ApiRequest requestForLogin:self.userNameTextField.text password:self.passWordTextField.text];
   [[ApiService serviceWithDelegate:self] sendJSONRequest:request];
+}
+
+- (void)saveProfileDataWithResponse:(ApiResponse *)response {
+  [CoreDataClass createOrUpdateFromDictionaryData:@{@"username": [response userName], @"password" : [response passWord]} completion:^(BOOL success, NSError *error) {
+    [DMCache createOrUpdateByDictionaryData:@{@"value" : self.userNameTextField.text} key:userNameIdentifier completion:^(BOOL success, NSError *error) {
+      [self dismissViewControllerAnimated:YES completion:nil];
+      [BaseViewController resetTabThenSelectedHome];
+    }];
+  }];
 }
 
 @end

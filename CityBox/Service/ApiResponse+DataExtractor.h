@@ -10,4 +10,7 @@
 
 @interface ApiResponse (DataExtractor)
 
+- (NSString *)userName;
+- (NSString *)passWord;
+
 @end
