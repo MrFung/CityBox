@@ -8,6 +8,7 @@
 
 #import "LoginViewController.h"
 #import "LoginViewController+LogicFlow.h"
+#import "LoginViewController+Configuration.h"
 #import "CanteenViewController.h"
 
 @interface LoginViewController ()
@@ -24,14 +25,36 @@
 
 - (void)viewDidLoad {
   [super viewDidLoad];
-//  [self login];
+  [self configureView];
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+  [super viewDidAppear:animated];
+  [self popGestureRecognizerDisable];
+  [self updateKeyboardManagerWithPreviousNextHidden:NO];
+  [self updateKeyboardManagerWithBottomHeight:100];
+}
+
+- (void)viewDidDisappear:(BOOL)animated {
+  [super viewDidDisappear:animated];
+  [self updateKeyboardManagerWithPreviousNextHidden:YES];
+  [self updateKeyboardManagerWithBottomHeight:16];
 }
 
 #pragma mark - IBAction Methods
 
 - (IBAction)loginButtonClicked:(id)sender {
-  [BaseViewController resetTabThenSelectedHome];
   [self login];
+}
+
+- (IBAction)viewTouchDown:(id)sender {
+  [[UIApplication sharedApplication] sendAction:@selector(resignFirstResponder) to:nil from:nil forEvent:nil];
+}
+
+#pragma mark - UITextFieldDelegate
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+  return [textField resignFirstResponder];
 }
 
 #pragma mark - Privite Methods

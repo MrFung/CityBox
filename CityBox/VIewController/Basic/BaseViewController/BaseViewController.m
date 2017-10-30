@@ -11,6 +11,7 @@
 #import "UINavigationController+Extend.h"
 #import "TabBarControllerWrapping.h"
 #import "LoginViewController.h"
+#import "IQKeyboardManager.h"
 
 NSInteger const Tabbar_Schedule_Page_Index = 0;
 NSInteger const Tabbar_Canteen_Page_Index = 1;
@@ -87,6 +88,44 @@ NSInteger const Tabbar_Library_Page_Index = 2;
   [HUD hide:YES afterDelay:delay];
 }
 
+#pragma mark - Keyboard Manager
+
+- (void)updateKeyboardManagerWithBottomHeight:(CGFloat)bottomHeight {
+  [IQKeyboardManager sharedManager].keyboardDistanceFromTextField = bottomHeight;
+  [self updateKeyboardManagerWithPreviousNextHidden:NO];
+}
+
+- (void)updateKeyboardManagerWithPreviousNextHidden:(BOOL)previousNextHidden {
+  [self updateKeyboardManagerEnableToolbar:YES withPreviousNextHidden:previousNextHidden];
+}
+
+- (void)updateKeyboardManagerEnableToolbar:(BOOL)enableToolbar withPreviousNextHidden:(BOOL)previousNextHidden {
+  [IQKeyboardManager sharedManager].enableAutoToolbar = enableToolbar;
+  [IQKeyboardManager sharedManager].previousNextDisplayMode = previousNextHidden ? IQPreviousNextDisplayModeAlwaysHide : IQPreviousNextDisplayModeAlwaysShow;
+}
+
+- (void)addAutoDismissKeyboardGesture {
+  NSNotificationCenter *notificationCenter = [NSNotificationCenter defaultCenter];
+  UITapGestureRecognizer *singleTapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(autoDismissKeyboardGestureAction:)];
+  NSOperationQueue *mainQuene =[NSOperationQueue mainQueue];
+  
+  // add Gesture
+  [notificationCenter addObserverForName:UIKeyboardWillShowNotification object:nil queue:mainQuene usingBlock:^(NSNotification *note){
+    [self.view addGestureRecognizer:singleTapGesture];
+  }];
+  
+  // remove Gesture
+  [notificationCenter addObserverForName:UIKeyboardWillHideNotification object:nil queue:mainQuene usingBlock:^(NSNotification *note){
+    [self.view removeGestureRecognizer:singleTapGesture];
+  }];
+}
+
+#pragma mark - Pop GestureRecognizer
+
+- (void)popGestureRecognizerDisable {
+  self.navigationController.interactivePopGestureRecognizer.enabled = NO;
+}
+
 #pragma mark - Private Methods
 
 + (void)createAndPresentLoginViewWithCompletion:(void(^)(void))completion {
@@ -124,5 +163,8 @@ NSInteger const Tabbar_Library_Page_Index = 2;
   rootNavigationController.viewControllers = rootNavigationVCArray;
 }
 
+- (void)autoDismissKeyboardGestureAction:(UIGestureRecognizer *)gestureRecognizer {
+  [self.view endEditing:YES];
+}
 
 @end

@@ -7,4 +7,5 @@ pod 'SDWebImage', '~> 4.0.0'
 pod 'MJRefresh', '~> 3.1.14'
 pod 'MagicalRecord', '~> 2.3.2'
 pod 'MBProgressHUD', '~> 0.9.1'
+pod 'IQKeyboardManager', '~> 5.0.4'
 end

@@ -21,17 +21,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入学号" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W7B-AU-uce">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入学号" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="W7B-AU-uce">
                                 <rect key="frame" x="15" y="298" width="345" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" textContentType="username"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done" textContentType="username"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zjf-Lf-5qj">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入密码" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Zjf-Lf-5qj">
                                 <rect key="frame" x="15" y="339" width="345" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" textContentType="password"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hb6-Nq-3he" userLabel="Center View">
                                 <rect key="frame" x="15" y="333" width="345" height="1"/>
@@ -64,6 +64,9 @@
                             <constraint firstItem="hb6-Nq-3he" firstAttribute="centerX" secondItem="5eM-7G-s4F" secondAttribute="centerX" id="qHz-bT-qvy"/>
                             <constraint firstAttribute="trailing" secondItem="vuL-S2-bEh" secondAttribute="trailing" constant="15" id="v4X-Hj-gT7"/>
                         </constraints>
+                        <connections>
+                            <action selector="viewTouchDown:" destination="OU4-ZW-1mT" eventType="touchDown" id="R6v-x9-VdW"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="6OB-8b-aaF"/>
                     <connections>

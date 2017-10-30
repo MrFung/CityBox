@@ -16,14 +16,14 @@
 }
 
 - (void)configureView {
-  [self configureViewEdges];
+  [self configureDelegate];
 }
 
 #pragma mark - Private Methods
 
-- (void)configureViewEdges {
-  self.edgesForExtendedLayout = UIRectEdgeNone;
-  self.tabBarController.edgesForExtendedLayout = UIRectEdgeNone;
+- (void)configureDelegate {
+  self.userNameTextField.delegate = self;
+  self.passWordTextField.delegate = self;
 }
 
 @end
