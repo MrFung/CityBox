@@ -11,6 +11,7 @@
 #import "Profile+DataManager.h"
 #import "DMCache+DataManager.h"
 #import "Profile+Utility.h"
+#import "NSDictionary+Utility.h"
 
 NSString *const userNameIdentifier = @"userNameIdentifier";
 
@@ -36,14 +37,14 @@ NSString *const userNameIdentifier = @"userNameIdentifier";
 }
 
 - (void)handleLoginResponse:(ApiResponse *)response {
-
-  Profile *profile = [Profile current];
-  if ([profile isLogin]) {
-    [BaseViewController resetTabThenSelectedHome];
-    NSLog(@"<<<<<<<已登录<<<<<<<<<");
-    NSLog(@"<<<<<<<%@<<<<<<<<<<<", [Profile current]);
+  if ([response isSucceed]) {
+    if ([[response.data stringForKey:@"status"] isEqualToString:@"ok"]) {
+      [self saveProfileDataWithResponse:response];
+    } else {
+      [self toast:@"学号或密码错误"];
+    }
   } else {
-        [self saveProfileDataWithResponse:response];
+    [self toast:@"网络连接错误"];
   }
 }
 
@@ -51,7 +52,7 @@ NSString *const userNameIdentifier = @"userNameIdentifier";
 
 - (void)requestLogin {
   ApiRequest *request = [ApiRequest requestForLogin:self.userNameTextField.text password:self.passWordTextField.text];
-  [[ApiService serviceWithDelegate:self] sendJSONRequest:request];
+  [[ApiService serviceWithDelegate:self] sendLoginJSONRequest:request];
 }
 
 - (void)saveProfileDataWithResponse:(ApiResponse *)response {

@@ -10,6 +10,8 @@
 #import "LoginViewController+LogicFlow.h"
 #import "LoginViewController+Configuration.h"
 #import "CanteenViewController.h"
+#import "Profile+DataManager.h"
+#import "Profile+Utility.h"
 
 @interface LoginViewController ()
 
@@ -26,6 +28,7 @@
 - (void)viewDidLoad {
   [super viewDidLoad];
   [self configureView];
+  [self checkShowNextView];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -49,6 +52,16 @@
 
 - (IBAction)viewTouchDown:(id)sender {
   [[UIApplication sharedApplication] sendAction:@selector(resignFirstResponder) to:nil from:nil forEvent:nil];
+}
+
+#pragma mark - Public Methods
+
+- (void)checkShowNextView {
+  if ([[Profile current] isLogin]) {
+    [BaseViewController resetTabThenSelectedHome];
+  } else {
+    [BaseViewController showLoginView];
+  }
 }
 
 #pragma mark - UITextFieldDelegate

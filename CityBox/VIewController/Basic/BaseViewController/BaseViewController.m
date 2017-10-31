@@ -11,6 +11,7 @@
 #import "UINavigationController+Extend.h"
 #import "TabBarControllerWrapping.h"
 #import "LoginViewController.h"
+#import "DataManager.h"
 #import "IQKeyboardManager.h"
 
 NSInteger const Tabbar_Schedule_Page_Index = 0;
@@ -86,6 +87,14 @@ NSInteger const Tabbar_Library_Page_Index = 2;
   HUD.detailsLabelFont = [UIFont systemFontOfSize:14.0f];
   HUD.opacity = 0.85;
   [HUD hide:YES afterDelay:delay];
+}
+
+- (void)cleanUpForUserDataWithCompletion:(void (^)(void))completion {
+  [DataManager cleanUpWithCompletion:^(BOOL success, NSError *error) {
+    if (completion) {
+      completion();
+    }
+  }];
 }
 
 #pragma mark - Keyboard Manager

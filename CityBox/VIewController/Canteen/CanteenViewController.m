@@ -62,4 +62,16 @@
   return 177.f;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+  switch (indexPath.row) {
+    case 0:
+      [self cleanUpForUserDataWithCompletion:nil];
+      [BaseViewController showLoginView];
+      break;
+      
+    default:
+      break;
+  }
+}
+
 @end

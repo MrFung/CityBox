@@ -31,6 +31,8 @@ typedef NS_ENUM(NSInteger, StoryboardName) {
 - (void)updateKeyboardManagerEnableToolbar:(BOOL)enableToolbar withPreviousNextHidden:(BOOL)previousNextHidden;
 - (void)addAutoDismissKeyboardGesture;
 
+- (void)cleanUpForUserDataWithCompletion:(void (^)(void))completion;
+
 - (void)popGestureRecognizerDisable;
 
 @end

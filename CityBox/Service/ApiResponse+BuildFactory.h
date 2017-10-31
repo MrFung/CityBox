@@ -10,7 +10,9 @@
 
 @interface ApiResponse (BuildFactory)
 
++ (instancetype)responseWithLoginJSON:(NSString *)json error:(NSError *)error;
 + (instancetype)responseWithJSON:(NSString *)json error:(NSError *)error;
++ (instancetype)responseWithLoginDictionary:(NSDictionary *)dictionary responseCode:(NSInteger)responseCode error:(NSError *)error;
 + (instancetype)responseWithDictionary:(NSDictionary *)dictionary responseCode:(NSInteger)responseCode error:(NSError *)error;
 
 @end
