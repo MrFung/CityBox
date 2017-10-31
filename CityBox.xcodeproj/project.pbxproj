@@ -8,20 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		E16EA58B7F6D7AECC3D19599 /* libPods-CityBox.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 127C576760837DCE3BD5A988 /* libPods-CityBox.a */; };
+		E50EAF561FA83DE7006B1A24 /* Profile+Deserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = E50EAF521FA83DE7006B1A24 /* Profile+Deserializer.m */; };
+		E50EAF581FA83DE7006B1A24 /* Profile+DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E50EAF551FA83DE7006B1A24 /* Profile+DataManager.m */; };
+		E50EAF6A1FA845C3006B1A24 /* DMCache+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = E50EAF641FA845C2006B1A24 /* DMCache+CoreDataProperties.m */; };
+		E50EAF6C1FA845C3006B1A24 /* DMCache+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = E50EAF671FA845C3006B1A24 /* DMCache+CoreDataClass.m */; };
+		E50EAF721FA846B4006B1A24 /* Profile+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = E50EAF701FA846B3006B1A24 /* Profile+CoreDataClass.m */; };
+		E50EAF731FA846B4006B1A24 /* Profile+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = E50EAF711FA846B4006B1A24 /* Profile+CoreDataProperties.m */; };
 		E516F6E21F9D9CB600B81F63 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E516F6E01F9D9CB600B81F63 /* BaseViewController.m */; };
 		E516F6E51F9D9D2500B81F63 /* UINavigationController+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = E516F6E41F9D9D2500B81F63 /* UINavigationController+Extend.m */; };
 		E516F6F21F9DBD7700B81F63 /* TabBarControllerWrapping.m in Sources */ = {isa = PBXBuildFile; fileRef = E516F6F11F9DBD7700B81F63 /* TabBarControllerWrapping.m */; };
 		E516F6F51F9DC30F00B81F63 /* UIView+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = E516F6F41F9DC30F00B81F63 /* UIView+Utility.m */; };
 		E516F6F81F9DC3F700B81F63 /* UIColor+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = E516F6F71F9DC3F700B81F63 /* UIColor+Utility.m */; };
-		E52AA37C1F9F05B3006AE85F /* CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = E52AA37B1F9F05B3006AE85F /* CoreDataClass.m */; };
-		E52AA37F1F9F0629006AE85F /* CoreDataClass+Properties.m in Sources */ = {isa = PBXBuildFile; fileRef = E52AA37E1F9F0629006AE85F /* CoreDataClass+Properties.m */; };
 		E52AA3821F9F079E006AE85F /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E52AA3811F9F079E006AE85F /* DataManager.m */; };
-		E52AA3851F9F07F3006AE85F /* CoreDataClass+DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E52AA3841F9F07F3006AE85F /* CoreDataClass+DataManager.m */; };
-		E52C09261FA707F30002FA87 /* CoreDataClass+Deserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = E52C09251FA707F30002FA87 /* CoreDataClass+Deserializer.m */; };
-		E52C09291FA70B440002FA87 /* DMCache.m in Sources */ = {isa = PBXBuildFile; fileRef = E52C09281FA70B440002FA87 /* DMCache.m */; };
-		E52C092C1FA70B8F0002FA87 /* DMCache+DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E52C092B1FA70B8F0002FA87 /* DMCache+DataManager.m */; };
-		E52C092F1FA70BD70002FA87 /* DMCache+Properties.m in Sources */ = {isa = PBXBuildFile; fileRef = E52C092E1FA70BD70002FA87 /* DMCache+Properties.m */; };
-		E52C09321FA70F3B0002FA87 /* DMCache+Deserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = E52C09311FA70F3B0002FA87 /* DMCache+Deserializer.m */; };
+		E537987D1FA813A200D16CF6 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E537987C1FA813A200D16CF6 /* libsqlite3.tbd */; };
+		E53798811FA838ED00D16CF6 /* DMCache+DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E52C092B1FA70B8F0002FA87 /* DMCache+DataManager.m */; };
+		E53798821FA8391700D16CF6 /* DMCache+Deserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = E52C09311FA70F3B0002FA87 /* DMCache+Deserializer.m */; };
 		E5507EBF1F9D7BA400FB87C6 /* BaseDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = E5507EBD1F9D7BA400FB87C6 /* BaseDTO.m */; };
 		E5507EC21F9D7BAE00FB87C6 /* CanteenInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E5507EC11F9D7BAE00FB87C6 /* CanteenInfo.m */; };
 		E5507ECB1F9D7BB900FB87C6 /* IphoneType.m in Sources */ = {isa = PBXBuildFile; fileRef = E5507EC31F9D7BB900FB87C6 /* IphoneType.m */; };
@@ -43,6 +44,7 @@
 		E5507EFE1F9D81B000FB87C6 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5507EF81F9D81AF00FB87C6 /* Login.storyboard */; };
 		E5507EFF1F9D81B000FB87C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5507EFA1F9D81B000FB87C6 /* LaunchScreen.storyboard */; };
 		E5507F001F9D81B000FB87C6 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5507EFC1F9D81B000FB87C6 /* Home.storyboard */; };
+		E55EDA351FA84B4B005D7BE1 /* Profile+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = E55EDA341FA84B4B005D7BE1 /* Profile+Utility.m */; };
 		E5D6A4D51F9DD1D0003C9C97 /* ScheduleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D6A4D41F9DD1D0003C9C97 /* ScheduleViewController.m */; };
 		E5D6A4D91F9DD253003C9C97 /* LibraryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D6A4D81F9DD253003C9C97 /* LibraryViewController.m */; };
 		E5D6A4DE1F9DDFB0003C9C97 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D6A4DD1F9DDFB0003C9C97 /* ProfileViewController.m */; };
@@ -81,6 +83,18 @@
 		127C576760837DCE3BD5A988 /* libPods-CityBox.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CityBox.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE4CBB4D99C3496D6CE20370 /* Pods-CityBox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CityBox.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CityBox/Pods-CityBox.debug.xcconfig"; sourceTree = "<group>"; };
 		D9EA938F8A56EC6DCF04FC4C /* Pods-CityBox.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CityBox.release.xcconfig"; path = "Pods/Target Support Files/Pods-CityBox/Pods-CityBox.release.xcconfig"; sourceTree = "<group>"; };
+		E50EAF511FA83DE6006B1A24 /* Profile+Deserializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Profile+Deserializer.h"; sourceTree = "<group>"; };
+		E50EAF521FA83DE7006B1A24 /* Profile+Deserializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Profile+Deserializer.m"; sourceTree = "<group>"; };
+		E50EAF541FA83DE7006B1A24 /* Profile+DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Profile+DataManager.h"; sourceTree = "<group>"; };
+		E50EAF551FA83DE7006B1A24 /* Profile+DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Profile+DataManager.m"; sourceTree = "<group>"; };
+		E50EAF641FA845C2006B1A24 /* DMCache+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "DMCache+CoreDataProperties.m"; path = "/Users/guofeng/Desktop/CityBox/CityBox/Model/DMCache+CoreDataProperties.m"; sourceTree = "<absolute>"; };
+		E50EAF661FA845C3006B1A24 /* DMCache+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "DMCache+CoreDataProperties.h"; path = "/Users/guofeng/Desktop/CityBox/CityBox/Model/DMCache+CoreDataProperties.h"; sourceTree = "<absolute>"; };
+		E50EAF671FA845C3006B1A24 /* DMCache+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "DMCache+CoreDataClass.m"; path = "/Users/guofeng/Desktop/CityBox/CityBox/Model/DMCache+CoreDataClass.m"; sourceTree = "<absolute>"; };
+		E50EAF691FA845C3006B1A24 /* DMCache+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "DMCache+CoreDataClass.h"; path = "/Users/guofeng/Desktop/CityBox/CityBox/Model/DMCache+CoreDataClass.h"; sourceTree = "<absolute>"; };
+		E50EAF6E1FA846B2006B1A24 /* Profile+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Profile+CoreDataClass.h"; path = "/Users/guofeng/Desktop/CityBox/CityBox/Model/Profile+CoreDataClass.h"; sourceTree = "<absolute>"; };
+		E50EAF6F1FA846B2006B1A24 /* Profile+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Profile+CoreDataProperties.h"; path = "/Users/guofeng/Desktop/CityBox/CityBox/Model/Profile+CoreDataProperties.h"; sourceTree = "<absolute>"; };
+		E50EAF701FA846B3006B1A24 /* Profile+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "Profile+CoreDataClass.m"; path = "/Users/guofeng/Desktop/CityBox/CityBox/Model/Profile+CoreDataClass.m"; sourceTree = "<absolute>"; };
+		E50EAF711FA846B4006B1A24 /* Profile+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "Profile+CoreDataProperties.m"; path = "/Users/guofeng/Desktop/CityBox/CityBox/Model/Profile+CoreDataProperties.m"; sourceTree = "<absolute>"; };
 		E516F6E01F9D9CB600B81F63 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		E516F6E11F9D9CB600B81F63 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		E516F6E31F9D9D2500B81F63 /* UINavigationController+Extend.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Extend.h"; sourceTree = "<group>"; };
@@ -91,24 +105,14 @@
 		E516F6F41F9DC30F00B81F63 /* UIView+Utility.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Utility.m"; sourceTree = "<group>"; };
 		E516F6F61F9DC3F700B81F63 /* UIColor+Utility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Utility.h"; sourceTree = "<group>"; };
 		E516F6F71F9DC3F700B81F63 /* UIColor+Utility.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Utility.m"; sourceTree = "<group>"; };
-		E52AA37A1F9F05B3006AE85F /* CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreDataClass.h; sourceTree = "<group>"; };
-		E52AA37B1F9F05B3006AE85F /* CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDataClass.m; sourceTree = "<group>"; };
-		E52AA37D1F9F0629006AE85F /* CoreDataClass+Properties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CoreDataClass+Properties.h"; sourceTree = "<group>"; };
-		E52AA37E1F9F0629006AE85F /* CoreDataClass+Properties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CoreDataClass+Properties.m"; sourceTree = "<group>"; };
 		E52AA3801F9F079E006AE85F /* DataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
 		E52AA3811F9F079E006AE85F /* DataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
-		E52AA3831F9F07F3006AE85F /* CoreDataClass+DataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CoreDataClass+DataManager.h"; sourceTree = "<group>"; };
-		E52AA3841F9F07F3006AE85F /* CoreDataClass+DataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CoreDataClass+DataManager.m"; sourceTree = "<group>"; };
-		E52C09241FA707F30002FA87 /* CoreDataClass+Deserializer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CoreDataClass+Deserializer.h"; sourceTree = "<group>"; };
-		E52C09251FA707F30002FA87 /* CoreDataClass+Deserializer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CoreDataClass+Deserializer.m"; sourceTree = "<group>"; };
-		E52C09271FA70B440002FA87 /* DMCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DMCache.h; sourceTree = "<group>"; };
-		E52C09281FA70B440002FA87 /* DMCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DMCache.m; sourceTree = "<group>"; };
 		E52C092A1FA70B8F0002FA87 /* DMCache+DataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DMCache+DataManager.h"; sourceTree = "<group>"; };
 		E52C092B1FA70B8F0002FA87 /* DMCache+DataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "DMCache+DataManager.m"; sourceTree = "<group>"; };
-		E52C092D1FA70BD70002FA87 /* DMCache+Properties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DMCache+Properties.h"; sourceTree = "<group>"; };
-		E52C092E1FA70BD70002FA87 /* DMCache+Properties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "DMCache+Properties.m"; sourceTree = "<group>"; };
 		E52C09301FA70F3B0002FA87 /* DMCache+Deserializer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DMCache+Deserializer.h"; sourceTree = "<group>"; };
 		E52C09311FA70F3B0002FA87 /* DMCache+Deserializer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "DMCache+Deserializer.m"; sourceTree = "<group>"; };
+		E537987C1FA813A200D16CF6 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		E537987E1FA813D300D16CF6 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		E5507EBD1F9D7BA400FB87C6 /* BaseDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseDTO.m; sourceTree = "<group>"; };
 		E5507EBE1F9D7BA400FB87C6 /* BaseDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseDTO.h; sourceTree = "<group>"; };
 		E5507EC01F9D7BAD00FB87C6 /* CanteenInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CanteenInfo.h; sourceTree = "<group>"; };
@@ -147,6 +151,8 @@
 		E5507EF91F9D81AF00FB87C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
 		E5507EFB1F9D81B000FB87C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E5507EFD1F9D81B000FB87C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Home.storyboard; sourceTree = "<group>"; };
+		E55EDA331FA84B4B005D7BE1 /* Profile+Utility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Profile+Utility.h"; sourceTree = "<group>"; };
+		E55EDA341FA84B4B005D7BE1 /* Profile+Utility.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Profile+Utility.m"; sourceTree = "<group>"; };
 		E5D6A4D31F9DD1D0003C9C97 /* ScheduleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScheduleViewController.h; sourceTree = "<group>"; };
 		E5D6A4D41F9DD1D0003C9C97 /* ScheduleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScheduleViewController.m; sourceTree = "<group>"; };
 		E5D6A4D71F9DD253003C9C97 /* LibraryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LibraryViewController.h; sourceTree = "<group>"; };
@@ -184,6 +190,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E537987D1FA813A200D16CF6 /* libsqlite3.tbd in Frameworks */,
 				E16EA58B7F6D7AECC3D19599 /* libPods-CityBox.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -217,6 +224,8 @@
 		C95E055D147C67BE22783040 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E537987E1FA813D300D16CF6 /* CoreData.framework */,
+				E537987C1FA813A200D16CF6 /* libsqlite3.tbd */,
 				127C576760837DCE3BD5A988 /* libPods-CityBox.a */,
 			);
 			name = Frameworks;
@@ -264,20 +273,22 @@
 			isa = PBXGroup;
 			children = (
 				E5D81DC51F9B4287000B2EE2 /* CityBox.xcdatamodeld */,
+				E55EDA331FA84B4B005D7BE1 /* Profile+Utility.h */,
+				E55EDA341FA84B4B005D7BE1 /* Profile+Utility.m */,
 				E52AA3801F9F079E006AE85F /* DataManager.h */,
 				E52AA3811F9F079E006AE85F /* DataManager.m */,
-				E52AA37A1F9F05B3006AE85F /* CoreDataClass.h */,
-				E52AA37B1F9F05B3006AE85F /* CoreDataClass.m */,
-				E52AA37D1F9F0629006AE85F /* CoreDataClass+Properties.h */,
-				E52AA37E1F9F0629006AE85F /* CoreDataClass+Properties.m */,
-				E52AA3831F9F07F3006AE85F /* CoreDataClass+DataManager.h */,
-				E52AA3841F9F07F3006AE85F /* CoreDataClass+DataManager.m */,
-				E52C09241FA707F30002FA87 /* CoreDataClass+Deserializer.h */,
-				E52C09251FA707F30002FA87 /* CoreDataClass+Deserializer.m */,
-				E52C09271FA70B440002FA87 /* DMCache.h */,
-				E52C09281FA70B440002FA87 /* DMCache.m */,
-				E52C092D1FA70BD70002FA87 /* DMCache+Properties.h */,
-				E52C092E1FA70BD70002FA87 /* DMCache+Properties.m */,
+				E50EAF6E1FA846B2006B1A24 /* Profile+CoreDataClass.h */,
+				E50EAF701FA846B3006B1A24 /* Profile+CoreDataClass.m */,
+				E50EAF6F1FA846B2006B1A24 /* Profile+CoreDataProperties.h */,
+				E50EAF711FA846B4006B1A24 /* Profile+CoreDataProperties.m */,
+				E50EAF541FA83DE7006B1A24 /* Profile+DataManager.h */,
+				E50EAF551FA83DE7006B1A24 /* Profile+DataManager.m */,
+				E50EAF511FA83DE6006B1A24 /* Profile+Deserializer.h */,
+				E50EAF521FA83DE7006B1A24 /* Profile+Deserializer.m */,
+				E50EAF691FA845C3006B1A24 /* DMCache+CoreDataClass.h */,
+				E50EAF671FA845C3006B1A24 /* DMCache+CoreDataClass.m */,
+				E50EAF661FA845C3006B1A24 /* DMCache+CoreDataProperties.h */,
+				E50EAF641FA845C2006B1A24 /* DMCache+CoreDataProperties.m */,
 				E52C092A1FA70B8F0002FA87 /* DMCache+DataManager.h */,
 				E52C092B1FA70B8F0002FA87 /* DMCache+DataManager.m */,
 				E52C09301FA70F3B0002FA87 /* DMCache+Deserializer.h */,
@@ -696,46 +707,47 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E53798821FA8391700D16CF6 /* DMCache+Deserializer.m in Sources */,
+				E53798811FA838ED00D16CF6 /* DMCache+DataManager.m in Sources */,
 				E5507EBF1F9D7BA400FB87C6 /* BaseDTO.m in Sources */,
 				E5E8C9821F9DEAB8005249CB /* LoginViewController+Configuration.m in Sources */,
 				E5507ECD1F9D7BB900FB87C6 /* NSDictionary+Utility.m in Sources */,
 				E5507EF41F9D7C7E00FB87C6 /* CanteenCell.m in Sources */,
 				E5E8C97F1F9DE669005249CB /* LoginViewController+LogicFlow.m in Sources */,
 				E5507EE01F9D7BC100FB87C6 /* ApiService.m in Sources */,
+				E55EDA351FA84B4B005D7BE1 /* Profile+Utility.m in Sources */,
 				E516F6F21F9DBD7700B81F63 /* TabBarControllerWrapping.m in Sources */,
-				E52AA37C1F9F05B3006AE85F /* CoreDataClass.m in Sources */,
 				E5507EDC1F9D7BC100FB87C6 /* ApiRequest+BuildFactory.m in Sources */,
-				E52AA37F1F9F0629006AE85F /* CoreDataClass+Properties.m in Sources */,
-				E52C09321FA70F3B0002FA87 /* DMCache+Deserializer.m in Sources */,
 				E516F6E51F9D9D2500B81F63 /* UINavigationController+Extend.m in Sources */,
 				E5E8C9791F9DE5AA005249CB /* LibraryViewController+Configuration.m in Sources */,
 				E5507EDD1F9D7BC100FB87C6 /* ApiResponse.m in Sources */,
 				E5D81DC71F9B4287000B2EE2 /* CityBox.xcdatamodeld in Sources */,
-				E52C09261FA707F30002FA87 /* CoreDataClass+Deserializer.m in Sources */,
 				E5507EC21F9D7BAE00FB87C6 /* CanteenInfo.m in Sources */,
 				E5D81DCF1F9B4287000B2EE2 /* main.m in Sources */,
 				E5507ECE1F9D7BB900FB87C6 /* UIView+FrameMethods.m in Sources */,
-				E52AA3851F9F07F3006AE85F /* CoreDataClass+DataManager.m in Sources */,
 				E5D6A4D91F9DD253003C9C97 /* LibraryViewController.m in Sources */,
+				E50EAF721FA846B4006B1A24 /* Profile+CoreDataClass.m in Sources */,
+				E50EAF731FA846B4006B1A24 /* Profile+CoreDataProperties.m in Sources */,
 				E5507EDB1F9D7BC100FB87C6 /* ApiResponse+BuildFactory.m in Sources */,
+				E50EAF6C1FA845C3006B1A24 /* DMCache+CoreDataClass.m in Sources */,
 				E5507ECC1F9D7BB900FB87C6 /* NSString+Utility.m in Sources */,
 				E516F6F81F9DC3F700B81F63 /* UIColor+Utility.m in Sources */,
-				E52C092F1FA70BD70002FA87 /* DMCache+Properties.m in Sources */,
 				E5D81DBE1F9B4287000B2EE2 /* AppDelegate.m in Sources */,
 				E5507ECB1F9D7BB900FB87C6 /* IphoneType.m in Sources */,
+				E50EAF561FA83DE7006B1A24 /* Profile+Deserializer.m in Sources */,
+				E50EAF581FA83DE7006B1A24 /* Profile+DataManager.m in Sources */,
 				E5D6A4DE1F9DDFB0003C9C97 /* ProfileViewController.m in Sources */,
 				E5E8C97C1F9DE5EA005249CB /* ProfileViewController+Configuration.m in Sources */,
 				E52AA3821F9F079E006AE85F /* DataManager.m in Sources */,
 				E5507EE61F9D7BCF00FB87C6 /* LoginViewController.m in Sources */,
 				E5507EDE1F9D7BC100FB87C6 /* ApiRequest.m in Sources */,
-				E52C09291FA70B440002FA87 /* DMCache.m in Sources */,
 				E5D6A4D51F9DD1D0003C9C97 /* ScheduleViewController.m in Sources */,
 				E5507EF01F9D7C7700FB87C6 /* CanteenViewController+Configuration.m in Sources */,
+				E50EAF6A1FA845C3006B1A24 /* DMCache+CoreDataProperties.m in Sources */,
 				E516F6F51F9DC30F00B81F63 /* UIView+Utility.m in Sources */,
 				E5507EEE1F9D7C7700FB87C6 /* CanteenViewController+LogicFlow.m in Sources */,
 				E5E8C9761F9DE53D005249CB /* ScheduleViewController+Configuration.m in Sources */,
 				E5507EEF1F9D7C7700FB87C6 /* CanteenViewController.m in Sources */,
-				E52C092C1FA70B8F0002FA87 /* DMCache+DataManager.m in Sources */,
 				E516F6E21F9D9CB600B81F63 /* BaseViewController.m in Sources */,
 				E5507EDF1F9D7BC100FB87C6 /* ApiResponse+DataExtractor.m in Sources */,
 			);

@@ -6,7 +6,7 @@
 //  Copyright © 2017年 郭枫. All rights reserved.
 //
 
-#import "DMCache.h"
+#import "DMCache+CoreDataClass.h"
 
 @interface DMCache (Deserializer)
 

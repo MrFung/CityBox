@@ -14,6 +14,12 @@
 
 #pragma mark - Public Methods
 
++ (instancetype)findByKey:(NSString *)key {
+  NSPredicate *predicate = [NSPredicate predicateWithFormat:@"key == %@", key];
+  
+  return [DMCache MR_findFirstWithPredicate:predicate];
+}
+
 + (void)createOrUpdateByDictionaryData:(NSDictionary *)data key:(NSString *)key completion:(void (^)(BOOL, NSError *))completion {
   [MagicalRecord saveWithBlock:^(NSManagedObjectContext *context) {
     [self createOrUpdateByDictionaryData:data key:key inContext:context];

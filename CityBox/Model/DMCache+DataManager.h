@@ -6,10 +6,11 @@
 //  Copyright © 2017年 郭枫. All rights reserved.
 //
 
-#import "DMCache.h"
+#import "DMCache+CoreDataClass.h"
 
 @interface DMCache (DataManager)
 
++ (instancetype)findByKey:(NSString *)key;
 + (void)createOrUpdateByDictionaryData:(NSDictionary *)data key:(NSString *)key completion:(void(^)(BOOL success, NSError *error))completion;
 
 @end

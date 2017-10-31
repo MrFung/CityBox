@@ -6,10 +6,10 @@
 //  Copyright © 2017年 郭枫. All rights reserved.
 //
 
-#import "CoreDataClass+Deserializer.h"
+#import "Profile+Deserializer.h"
 #import "NSDictionary+Utility.h"
 
-@implementation CoreDataClass (Deserializer)
+@implementation Profile (Deserializer)
 
 - (void)updateFromDictionaryData:(NSDictionary *)data {
   NSString *userName = [data stringForKey:@"username"];

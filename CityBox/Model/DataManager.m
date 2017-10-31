@@ -7,8 +7,17 @@
 //
 
 #import "DataManager.h"
+#import "Profile+CoreDataClass.h"
+#import "DMCache+CoreDataClass.h"
+#import <MagicalRecord/MagicalRecord.h>
 
 @implementation DataManager
 
++ (void)cleanUpWithCompletion:(void(^)(BOOL success, NSError *error))completion {
+  [MagicalRecord saveWithBlock:^(NSManagedObjectContext *context) {
+    [Profile MR_truncateAllInContext:context];
+    [DMCache MR_truncateAllInContext:context];
+  } completion:completion];
+}
 
 @end

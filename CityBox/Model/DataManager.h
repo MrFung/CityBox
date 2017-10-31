@@ -10,4 +10,6 @@
 
 @interface DataManager : NSObject
 
++ (void)cleanUpWithCompletion:(void(^)(BOOL success, NSError *error))completion;
+
 @end

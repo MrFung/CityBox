@@ -6,9 +6,9 @@
 //  Copyright © 2017年 郭枫. All rights reserved.
 //
 
-#import "CoreDataClass.h"
+#import "Profile+CoreDataClass.h"
 
-@interface CoreDataClass (Deserializer)
+@interface Profile (Deserializer)
 
 - (void)updateFromDictionaryData:(NSDictionary *)data;
 
