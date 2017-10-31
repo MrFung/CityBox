@@ -16,5 +16,6 @@
 
 @dynamic passWord;
 @dynamic userName;
+@dynamic studentName;
 
 @end

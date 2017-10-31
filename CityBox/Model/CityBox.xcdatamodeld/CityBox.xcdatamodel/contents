@@ -6,10 +6,11 @@
     </entity>
     <entity name="Profile" representedClassName="Profile" syncable="YES">
         <attribute name="passWord" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="studentName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="userName" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Profile" positionX="-18" positionY="9" width="128" height="75"/>
         <element name="DMCache" positionX="-45" positionY="-18" width="128" height="75"/>
+        <element name="Profile" positionX="-18" positionY="9" width="128" height="90"/>
     </elements>
 </model>

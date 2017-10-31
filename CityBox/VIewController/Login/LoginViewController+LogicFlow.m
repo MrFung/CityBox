@@ -56,7 +56,7 @@ NSString *const userNameIdentifier = @"userNameIdentifier";
 }
 
 - (void)saveProfileDataWithResponse:(ApiResponse *)response {
-  [Profile createOrUpdateFromDictionaryData:@{@"username": self.userNameTextField.text, @"password" : self.passWordTextField.text} completion:^(BOOL success, NSError *error) {
+  [Profile createOrUpdateFromDictionaryData:@{@"username": self.userNameTextField.text, @"password" : self.passWordTextField.text, @"studentName" : [response.data stringForKey:@"man"]} completion:^(BOOL success, NSError *error) {
     [DMCache createOrUpdateByDictionaryData:@{@"value" : self.userNameTextField.text} key:userNameIdentifier completion:^(BOOL success, NSError *error) {
       [self dismissViewControllerAnimated:YES completion:nil];
       [BaseViewController resetTabThenSelectedHome];

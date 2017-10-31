@@ -17,6 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nullable, nonatomic, copy) NSString *passWord;
 @property (nullable, nonatomic, copy) NSString *userName;
+@property (nullable, nonatomic, copy) NSString *studentName;
 
 @end
 

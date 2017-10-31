@@ -19,6 +19,9 @@
   
   NSString *passWord = [data stringForKey:@"password"];
   self.passWord = passWord;
+  
+  NSString *studentName = [data stringForKey:@"studentName"];
+  self.studentName = studentName;
 }
 
 @end
