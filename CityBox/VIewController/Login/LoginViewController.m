@@ -28,7 +28,7 @@
 - (void)viewDidLoad {
   [super viewDidLoad];
   [self configureView];
-  //[self checkShowNextView];
+  [self checkShowNextView];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -48,7 +48,7 @@
 
 - (IBAction)loginButtonClicked:(id)sender {
   [BaseViewController resetTabThenSelectedHome];
-  //[self login];
+  [self login];
 }
 
 - (IBAction)viewTouchDown:(id)sender {

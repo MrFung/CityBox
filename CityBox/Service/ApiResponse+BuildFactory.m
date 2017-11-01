@@ -69,7 +69,7 @@
     response.errorMessage = @"无法连接服务器!";
   } else {
     response.code = API_RESPONSE_CODE_SUCCESS;
-    response.data = dictionary[@"data"];
+    response.data = dictionary[@"book"];
   }
   return response;
 }

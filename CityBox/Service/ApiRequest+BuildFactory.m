@@ -32,6 +32,7 @@
   NSString *requestUrl = [NSString stringWithFormat:@"%@%@", PATH_LIBRARY, bookName];
   ApiRequest *request = [self requestWithPath:requestUrl];
   request.type = ApiRequestTypeLibrary;
+  request.method = ApiRequestMethodGet;
   
   return request;
 }

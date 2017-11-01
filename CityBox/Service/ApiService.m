@@ -60,7 +60,7 @@
   [self sendRequest:apiRequest withCompletion:^(id dictionary, NSInteger responseCode, NSError *error) {
     ApiResponse *apiResponse = nil;
     
-    apiResponse = [ApiResponse responseWithCanteenDictionary:dictionary responseCode:responseCode error:error];
+    apiResponse = [ApiResponse responseWithLibraryDictionary:dictionary responseCode:responseCode error:error];
     
     [self.delegate service:self didFinishRequest:apiRequest withResponse:apiResponse];
   }];
@@ -131,6 +131,12 @@
   
   if (ApiRequestMethodPost == apiRequest.method) {
     [request setHTTPMethod:@"POST"];
+    NSLog(@"POST");
+    [request setHTTPBody:[apiRequest.parameters toJSONData]];
+  }
+  if (ApiRequestMethodGet == apiRequest.method) {
+    [request setHTTPMethod:@"GET"];
+    NSLog(@"GET");
     [request setHTTPBody:[apiRequest.parameters toJSONData]];
   }
   

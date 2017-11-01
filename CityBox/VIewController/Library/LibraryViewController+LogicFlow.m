@@ -48,7 +48,8 @@
 #pragma mark - Private Methods
 
 - (void)requestLoadLibrary {
-  ApiRequest *request = [ApiRequest requestForLibrary:self.searchBar.text];
+   NSString *bookName = [self.searchBar.text stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
+  ApiRequest *request = [ApiRequest requestForLibrary:bookName];
   [[ApiService serviceWithDelegate:self] sendLibraryJSONRequest:request];
 }
 
