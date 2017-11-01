@@ -30,8 +30,7 @@
 
 - (void)configureTableVIew {
   self.tableView.delegate = self;
-  self.tableView.dataSource =self;
-  self.tableView.tableFooterView = [[UIView alloc] init];
+  self.tableView.dataSource = self;
   
   [self.tableView registerNib:[UINib nibWithNibName:@"CanteenCell" bundle:nil] forCellReuseIdentifier:CanteenCellReuseId];
 }

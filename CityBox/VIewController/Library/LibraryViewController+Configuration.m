@@ -17,6 +17,8 @@
 
 - (void)configureView {
   [self configureViewEdges];
+  [self configureTableVIew];
+  [self configureSearchBar];
 }
 
 #pragma mark - Private Methods
@@ -24,6 +26,17 @@
 - (void)configureViewEdges {
   self.edgesForExtendedLayout = UIRectEdgeNone;
   self.tabBarController.edgesForExtendedLayout = UIRectEdgeNone;
+}
+
+- (void)configureTableVIew {
+  self.tableView.delegate = self;
+  self.tableView.dataSource = self;
+  
+  [self.tableView registerNib:[UINib nibWithNibName:@"LibraryCell" bundle:nil] forCellReuseIdentifier:LibraryCellReuseId];
+}
+
+- (void)configureSearchBar {
+  self.searchBar.delegate = self;
 }
 
 @end

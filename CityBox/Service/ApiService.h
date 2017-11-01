@@ -21,7 +21,8 @@
 + (id)serviceWithTag:(NSInteger)tag delegate:(id <ApiServiceDelegate>)delegate;
 
 - (void)sendLoginJSONRequest:(ApiRequest *)apiRequest;
-- (void)sendJSONRequest:(ApiRequest *)apiRequest;
+- (void)sendCanteenJSONRequest:(ApiRequest *)apiRequest;
+- (void)sendLibraryJSONRequest:(ApiRequest *)apiRequest;
 - (void)sendRequest:(ApiRequest *)apiRequest withResponseBuildBlock:(ApiResponse *(^)(id data, NSError *error))responseBuildBlock;
 
 @end

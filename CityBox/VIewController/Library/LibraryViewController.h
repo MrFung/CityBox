@@ -7,7 +7,17 @@
 //
 
 #import "BaseViewController.h"
+#import "ApiService.h"
 
-@interface LibraryViewController : BaseViewController
+static NSString *const LibraryCellReuseId = @"LibraryCellReuseId";
+
+@interface LibraryViewController : BaseViewController <ApiServiceDelegate, UISearchBarDelegate, UITableViewDataSource, UITableViewDelegate>
+
+@property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+
+@property (nonatomic, strong) NSMutableArray *libraryInfos;
+
+- (void)reloadDatas;
 
 @end

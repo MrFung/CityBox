@@ -28,7 +28,7 @@
 - (void)viewDidLoad {
   [super viewDidLoad];
   [self configureView];
-  [self checkShowNextView];
+  //[self checkShowNextView];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -47,7 +47,8 @@
 #pragma mark - IBAction Methods
 
 - (IBAction)loginButtonClicked:(id)sender {
-  [self login];
+  [BaseViewController resetTabThenSelectedHome];
+  //[self login];
 }
 
 - (IBAction)viewTouchDown:(id)sender {

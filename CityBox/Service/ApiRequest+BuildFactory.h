@@ -11,7 +11,7 @@
 @interface ApiRequest (BuildFactory)
 
 + (instancetype)requestForLogin:(NSString *)username password:(NSString *)password;
-+ (instancetype)requestForLibrary;
++ (instancetype)requestForLibrary:(NSString *)bookName;
 + (instancetype)requestForCanteen;
 + (instancetype)requestForMenu:(NSString *)menuId;
 + (instancetype)requestForGrade:(NSString *)username password:(NSString *)password time:(NSString *)termstring action:(NSString *)action;

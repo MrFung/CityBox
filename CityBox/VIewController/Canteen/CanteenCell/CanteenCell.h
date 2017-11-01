@@ -11,13 +11,13 @@
 
 @interface CanteenCell : UITableViewCell
 
-@property (strong, nonatomic) CanteenInfo *canteenInfo;
-
 @property (weak, nonatomic) IBOutlet UILabel *menuId;
 @property (weak, nonatomic) IBOutlet UILabel *location;
 @property (weak, nonatomic) IBOutlet UILabel *floor;
 @property (weak, nonatomic) IBOutlet UILabel *name;
 @property (weak, nonatomic) IBOutlet UILabel *telephone;
+
+@property (nonatomic, strong) CanteenInfo *canteenInfo;
 
 - (void) updateCellWithCanteenInfo:(CanteenInfo *)canteenInfo;
 

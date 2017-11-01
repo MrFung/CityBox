@@ -9,7 +9,7 @@
 #import "ApiRequest+BuildFactory.h"
 
 #define PATH_LOGIN @"http://123.206.60.17:5000/api/login"
-#define PATH_LIBRARY @"http://123.206.60.17/csxyxzs-master/index.php/Home/Campus/appLibrary/title"
+#define PATH_LIBRARY @"http://123.206.60.17/csxyxzs-master/index.php/Home/Campus/appLibrary/title/"
 #define PATH_CANTEEN @"http://123.206.60.17/csxyxzs-master/index.php/Home/Campus/appShitang"
 #define PATH_MENU @"http://123.206.60.17/csxyxzs-master/index.php/Home/Campus/appCaidan"
 #define PATH_GRADE @"http://123.206.60.17:5000/api/grade"
@@ -28,8 +28,9 @@
   return request;
 }
 
-+ (instancetype)requestForLibrary {
-  ApiRequest *request = [self requestWithPath:PATH_LIBRARY];
++ (instancetype)requestForLibrary:(NSString *)bookName {
+  NSString *requestUrl = [NSString stringWithFormat:@"%@%@", PATH_LIBRARY, bookName];
+  ApiRequest *request = [self requestWithPath:requestUrl];
   request.type = ApiRequestTypeLibrary;
   
   return request;

@@ -23,6 +23,10 @@
 		E537987D1FA813A200D16CF6 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E537987C1FA813A200D16CF6 /* libsqlite3.tbd */; };
 		E53798811FA838ED00D16CF6 /* DMCache+DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E52C092B1FA70B8F0002FA87 /* DMCache+DataManager.m */; };
 		E53798821FA8391700D16CF6 /* DMCache+Deserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = E52C09311FA70F3B0002FA87 /* DMCache+Deserializer.m */; };
+		E54E1CF91FA98A9300D95D2D /* LibraryViewController+LogicFlow.m in Sources */ = {isa = PBXBuildFile; fileRef = E54E1CF81FA98A9300D95D2D /* LibraryViewController+LogicFlow.m */; };
+		E54E1CFE1FA9A24000D95D2D /* LibraryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E54E1CFC1FA9A24000D95D2D /* LibraryCell.m */; };
+		E54E1CFF1FA9A24000D95D2D /* LibraryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E54E1CFD1FA9A24000D95D2D /* LibraryCell.xib */; };
+		E54E1D021FA9A4CD00D95D2D /* LibraryInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E54E1D011FA9A4CD00D95D2D /* LibraryInfo.m */; };
 		E5507EBF1F9D7BA400FB87C6 /* BaseDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = E5507EBD1F9D7BA400FB87C6 /* BaseDTO.m */; };
 		E5507EC21F9D7BAE00FB87C6 /* CanteenInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E5507EC11F9D7BAE00FB87C6 /* CanteenInfo.m */; };
 		E5507ECB1F9D7BB900FB87C6 /* IphoneType.m in Sources */ = {isa = PBXBuildFile; fileRef = E5507EC31F9D7BB900FB87C6 /* IphoneType.m */; };
@@ -113,6 +117,13 @@
 		E52C09311FA70F3B0002FA87 /* DMCache+Deserializer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "DMCache+Deserializer.m"; sourceTree = "<group>"; };
 		E537987C1FA813A200D16CF6 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		E537987E1FA813D300D16CF6 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		E54E1CF71FA98A9300D95D2D /* LibraryViewController+LogicFlow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LibraryViewController+LogicFlow.h"; sourceTree = "<group>"; };
+		E54E1CF81FA98A9300D95D2D /* LibraryViewController+LogicFlow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "LibraryViewController+LogicFlow.m"; sourceTree = "<group>"; };
+		E54E1CFB1FA9A24000D95D2D /* LibraryCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LibraryCell.h; sourceTree = "<group>"; };
+		E54E1CFC1FA9A24000D95D2D /* LibraryCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LibraryCell.m; sourceTree = "<group>"; };
+		E54E1CFD1FA9A24000D95D2D /* LibraryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LibraryCell.xib; sourceTree = "<group>"; };
+		E54E1D001FA9A4CD00D95D2D /* LibraryInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LibraryInfo.h; sourceTree = "<group>"; };
+		E54E1D011FA9A4CD00D95D2D /* LibraryInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LibraryInfo.m; sourceTree = "<group>"; };
 		E5507EBD1F9D7BA400FB87C6 /* BaseDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseDTO.m; sourceTree = "<group>"; };
 		E5507EBE1F9D7BA400FB87C6 /* BaseDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseDTO.h; sourceTree = "<group>"; };
 		E5507EC01F9D7BAD00FB87C6 /* CanteenInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CanteenInfo.h; sourceTree = "<group>"; };
@@ -297,6 +308,16 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		E54E1CFA1FA9A1FF00D95D2D /* LibraryCell */ = {
+			isa = PBXGroup;
+			children = (
+				E54E1CFB1FA9A24000D95D2D /* LibraryCell.h */,
+				E54E1CFC1FA9A24000D95D2D /* LibraryCell.m */,
+				E54E1CFD1FA9A24000D95D2D /* LibraryCell.xib */,
+			);
+			path = LibraryCell;
+			sourceTree = "<group>";
+		};
 		E5507EAF1F9D793300FB87C6 /* StoryBoard */ = {
 			isa = PBXGroup;
 			children = (
@@ -409,6 +430,8 @@
 			children = (
 				E5507EC01F9D7BAD00FB87C6 /* CanteenInfo.h */,
 				E5507EC11F9D7BAE00FB87C6 /* CanteenInfo.m */,
+				E54E1D001FA9A4CD00D95D2D /* LibraryInfo.h */,
+				E54E1D011FA9A4CD00D95D2D /* LibraryInfo.m */,
 			);
 			path = Infos;
 			sourceTree = "<group>";
@@ -439,6 +462,9 @@
 				E5D6A4D81F9DD253003C9C97 /* LibraryViewController.m */,
 				E5E8C9771F9DE5AA005249CB /* LibraryViewController+Configuration.h */,
 				E5E8C9781F9DE5AA005249CB /* LibraryViewController+Configuration.m */,
+				E54E1CF71FA98A9300D95D2D /* LibraryViewController+LogicFlow.h */,
+				E54E1CF81FA98A9300D95D2D /* LibraryViewController+LogicFlow.m */,
+				E54E1CFA1FA9A1FF00D95D2D /* LibraryCell */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -624,6 +650,7 @@
 			files = (
 				E5E8C9841F9E048E005249CB /* README.md in Resources */,
 				E5D81DC91F9B4287000B2EE2 /* Assets.xcassets in Resources */,
+				E54E1CFF1FA9A24000D95D2D /* LibraryCell.xib in Resources */,
 				E5507F001F9D81B000FB87C6 /* Home.storyboard in Resources */,
 				E5507EFF1F9D81B000FB87C6 /* LaunchScreen.storyboard in Resources */,
 				E5507EF51F9D7C7E00FB87C6 /* CanteenCell.xib in Resources */,
@@ -720,6 +747,7 @@
 				E5507EDC1F9D7BC100FB87C6 /* ApiRequest+BuildFactory.m in Sources */,
 				E516F6E51F9D9D2500B81F63 /* UINavigationController+Extend.m in Sources */,
 				E5E8C9791F9DE5AA005249CB /* LibraryViewController+Configuration.m in Sources */,
+				E54E1CFE1FA9A24000D95D2D /* LibraryCell.m in Sources */,
 				E5507EDD1F9D7BC100FB87C6 /* ApiResponse.m in Sources */,
 				E5D81DC71F9B4287000B2EE2 /* CityBox.xcdatamodeld in Sources */,
 				E5507EC21F9D7BAE00FB87C6 /* CanteenInfo.m in Sources */,
@@ -741,6 +769,7 @@
 				E52AA3821F9F079E006AE85F /* DataManager.m in Sources */,
 				E5507EE61F9D7BCF00FB87C6 /* LoginViewController.m in Sources */,
 				E5507EDE1F9D7BC100FB87C6 /* ApiRequest.m in Sources */,
+				E54E1D021FA9A4CD00D95D2D /* LibraryInfo.m in Sources */,
 				E5D6A4D51F9DD1D0003C9C97 /* ScheduleViewController.m in Sources */,
 				E5507EF01F9D7C7700FB87C6 /* CanteenViewController+Configuration.m in Sources */,
 				E50EAF6A1FA845C3006B1A24 /* DMCache+CoreDataProperties.m in Sources */,
@@ -750,6 +779,7 @@
 				E5507EEF1F9D7C7700FB87C6 /* CanteenViewController.m in Sources */,
 				E516F6E21F9D9CB600B81F63 /* BaseViewController.m in Sources */,
 				E5507EDF1F9D7BC100FB87C6 /* ApiResponse+DataExtractor.m in Sources */,
+				E54E1CF91FA98A9300D95D2D /* LibraryViewController+LogicFlow.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

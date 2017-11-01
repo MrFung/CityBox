@@ -12,6 +12,8 @@
 
 @implementation CanteenViewController (LogicFlow)
 
+#pragma mark - Public Methods
+
 - (void)loadData {
   [self requestLoadCanteen];
 }
@@ -21,7 +23,7 @@
 - (void)service:(ApiService *)service didFinishRequest:(ApiRequest *)request withResponse:(ApiResponse *)response {
   switch (request.type) {
     case ApiRequestTypeCanteen:
-      [self handleLoadResponse:response];
+      [self handleLoadCanteenResponse:response];
       break;
       
     default:
@@ -29,7 +31,7 @@
   }
 }
 
-- (void)handleLoadResponse:(ApiResponse *)response {
+- (void)handleLoadCanteenResponse:(ApiResponse *)response {
   if ([response isSucceed]) {
     if ([CanteenInfo validateArrayData:response.data]) {
       [self.canteenInfos removeAllObjects];
@@ -60,7 +62,7 @@
 
 - (void)requestLoadCanteen {
   ApiRequest *request = [ApiRequest requestForCanteen];
-  [[ApiService serviceWithDelegate:self] sendJSONRequest:request];
+  [[ApiService serviceWithDelegate:self] sendCanteenJSONRequest:request];
 }
 
 

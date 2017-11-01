@@ -36,16 +36,6 @@
   return service;
 }
 
-- (void)sendJSONRequest:(ApiRequest *)apiRequest {
-  [self sendRequest:apiRequest withCompletion:^(id dictionary, NSInteger responseCode, NSError *error) {
-    ApiResponse *apiResponse = nil;
-    
-    apiResponse = [ApiResponse responseWithDictionary:dictionary responseCode:responseCode error:error];
-    
-    [self.delegate service:self didFinishRequest:apiRequest withResponse:apiResponse];
-  }];
-}
-
 - (void)sendLoginJSONRequest:(ApiRequest *)apiRequest {
   [self sendRequest:apiRequest withCompletion:^(id dictionary, NSInteger responseCode, NSError *error) {
     ApiResponse *apiResponse = nil;
@@ -56,9 +46,29 @@
   }];
 }
 
+- (void)sendCanteenJSONRequest:(ApiRequest *)apiRequest {
+  [self sendRequest:apiRequest withCompletion:^(id dictionary, NSInteger responseCode, NSError *error) {
+    ApiResponse *apiResponse = nil;
+    
+    apiResponse = [ApiResponse responseWithCanteenDictionary:dictionary responseCode:responseCode error:error];
+    
+    [self.delegate service:self didFinishRequest:apiRequest withResponse:apiResponse];
+  }];
+}
+
+- (void)sendLibraryJSONRequest:(ApiRequest *)apiRequest {
+  [self sendRequest:apiRequest withCompletion:^(id dictionary, NSInteger responseCode, NSError *error) {
+    ApiResponse *apiResponse = nil;
+    
+    apiResponse = [ApiResponse responseWithCanteenDictionary:dictionary responseCode:responseCode error:error];
+    
+    [self.delegate service:self didFinishRequest:apiRequest withResponse:apiResponse];
+  }];
+}
+
 - (void)sendRequest:(ApiRequest *)apiRequest withResponseBuildBlock:(ApiResponse *(^)(id data, NSError *error))responseBuildBlock {
   [self sendRequest:apiRequest withCompletion:^(id data, NSInteger responseCode, NSError *error) {
-    ApiResponse *apiResponse = responseBuildBlock ? responseBuildBlock(data, error) : [ApiResponse responseWithJSON:data  error:error];
+    ApiResponse *apiResponse = responseBuildBlock ? responseBuildBlock(data, error) : [ApiResponse responseWithLoginJSON:data  error:error];
     [self.delegate service:self didFinishRequest:apiRequest withResponse:apiResponse];
   }];
 }
