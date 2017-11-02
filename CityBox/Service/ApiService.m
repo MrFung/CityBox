@@ -137,7 +137,6 @@
   if (ApiRequestMethodGet == apiRequest.method) {
     [request setHTTPMethod:@"GET"];
     NSLog(@"GET");
-    [request setHTTPBody:[apiRequest.parameters toJSONData]];
   }
   
   return request;
