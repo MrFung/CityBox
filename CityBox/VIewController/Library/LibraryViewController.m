@@ -25,6 +25,7 @@
 
 - (void)viewDidLoad {
   [super viewDidLoad];
+  [self initProperties];
   [self configureView];
 }
 
@@ -38,6 +39,7 @@
 
 - (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
   [self loadData];
+  [self.searchBar resignFirstResponder];
 }
 
 #pragma mark - UITableViewDataSource

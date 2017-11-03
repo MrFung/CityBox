@@ -25,10 +25,10 @@
 
 - (void)reloadData {
   self.bookName.text = self.libraryInfo.bookName;
-  self.bookAuther.text = self.libraryInfo.bookAuther;
-  self.bookPress.text = self.libraryInfo.bookPress;
-  self.bookPlace.text = self.libraryInfo.bookPlace;
-  self.bookStatus.text = self.libraryInfo.bookStatus;
+  self.bookAuther.text = [NSString stringWithFormat:@"作者: %@", self.libraryInfo.bookAuther];
+  self.bookPress.text = [NSString stringWithFormat:@"出版社: %@", self.libraryInfo.bookPress];
+  self.bookPlace.text = [NSString stringWithFormat:@"位置: %@", self.libraryInfo.bookPlace];
+  self.bookStatus.text = [NSString stringWithFormat:@"状态: %@", self.libraryInfo.bookStatus];
 }
 
 @end

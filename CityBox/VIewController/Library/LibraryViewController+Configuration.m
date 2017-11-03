@@ -13,6 +13,7 @@
 #pragma mark - Public Methods
 
 - (void)initProperties {
+  self.libraryInfos = [NSMutableArray array];
 }
 
 - (void)configureView {

@@ -31,12 +31,21 @@
 }
 
 - (void)handleLoadLibraryResponse:(ApiResponse *)response {
-  NSLog(@"<<<<<<%@", response.data);
   if ([response isSucceed]) {
-    if ([LibraryInfo validateDictionaryData:response.data]) {
+    if ([LibraryInfo validateArrayData:response.data]) {
       [self.libraryInfos removeAllObjects];
       
-      
+      NSArray *libraryItem = response.data;
+      for (NSDictionary *libraryInfoData in libraryItem) {
+        if ([LibraryInfo validateDictionaryData:libraryInfoData]) {
+          LibraryInfo *libraryInfo = [LibraryInfo libraryInfoWithData:libraryInfoData];
+          [self.libraryInfos addObject:libraryInfo];
+        } else {
+          [self toast:@"数据结构错误"];
+        }
+      }
+    } else {
+      [self toast:@"数据结构错误"];
     }
   } else {
     NSLog(@"%@", response.errorMessage);

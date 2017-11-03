@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -29,7 +29,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eWm-W7-wFO" userLabel="BookAuther Label">
-                        <rect key="frame" x="0.0" y="40" width="405" height="20"/>
+                        <rect key="frame" x="10" y="40" width="395" height="20"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="20" id="dhY-jE-XRS"/>
                         </constraints>
@@ -38,7 +38,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZmB-ae-kd0" userLabel="BookPressLabel">
-                        <rect key="frame" x="0.0" y="60" width="405" height="20"/>
+                        <rect key="frame" x="10" y="65" width="395" height="20"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="20" id="la3-se-n8i"/>
                         </constraints>
@@ -47,7 +47,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BIV-yJ-uA0" userLabel="BookPlace Label">
-                        <rect key="frame" x="0.0" y="80" width="405" height="20"/>
+                        <rect key="frame" x="10" y="90" width="395" height="20"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="20" id="S5V-mi-a7b"/>
                         </constraints>
@@ -56,7 +56,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F3v-hO-wrA" userLabel="BookStatus Label">
-                        <rect key="frame" x="0.0" y="100" width="405" height="20"/>
+                        <rect key="frame" x="10" y="115" width="395" height="20"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="20" id="anP-iX-wDA"/>
                         </constraints>
@@ -66,21 +66,21 @@
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="F3v-hO-wrA" firstAttribute="top" secondItem="BIV-yJ-uA0" secondAttribute="bottom" id="1d8-Ez-eGh"/>
+                    <constraint firstItem="F3v-hO-wrA" firstAttribute="top" secondItem="BIV-yJ-uA0" secondAttribute="bottom" constant="5" id="1d8-Ez-eGh"/>
                     <constraint firstAttribute="trailing" secondItem="Zae-NI-Bfl" secondAttribute="trailing" id="2wT-Hq-963"/>
                     <constraint firstItem="Zae-NI-Bfl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="5ED-8o-QMb"/>
-                    <constraint firstItem="BIV-yJ-uA0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="5gP-Nf-u6i"/>
-                    <constraint firstItem="BIV-yJ-uA0" firstAttribute="top" secondItem="ZmB-ae-kd0" secondAttribute="bottom" id="9sc-7G-HdI"/>
+                    <constraint firstItem="BIV-yJ-uA0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="5gP-Nf-u6i"/>
+                    <constraint firstItem="BIV-yJ-uA0" firstAttribute="top" secondItem="ZmB-ae-kd0" secondAttribute="bottom" constant="5" id="9sc-7G-HdI"/>
                     <constraint firstAttribute="trailing" secondItem="F3v-hO-wrA" secondAttribute="trailing" id="HOh-81-jlR"/>
-                    <constraint firstItem="F3v-hO-wrA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="OW8-jm-EDk"/>
+                    <constraint firstItem="F3v-hO-wrA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="OW8-jm-EDk"/>
                     <constraint firstItem="Zae-NI-Bfl" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="QMQ-co-Odq"/>
                     <constraint firstItem="eWm-W7-wFO" firstAttribute="top" secondItem="Zae-NI-Bfl" secondAttribute="bottom" id="aDT-oQ-Kwd"/>
-                    <constraint firstItem="eWm-W7-wFO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="azS-Lx-Ej9"/>
+                    <constraint firstItem="eWm-W7-wFO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="azS-Lx-Ej9"/>
                     <constraint firstAttribute="trailing" secondItem="eWm-W7-wFO" secondAttribute="trailing" id="cvm-1y-J6l"/>
-                    <constraint firstItem="ZmB-ae-kd0" firstAttribute="top" secondItem="eWm-W7-wFO" secondAttribute="bottom" id="iPA-YC-prA"/>
+                    <constraint firstItem="ZmB-ae-kd0" firstAttribute="top" secondItem="eWm-W7-wFO" secondAttribute="bottom" constant="5" id="iPA-YC-prA"/>
                     <constraint firstAttribute="trailing" secondItem="BIV-yJ-uA0" secondAttribute="trailing" id="m2J-Ff-0R3"/>
                     <constraint firstAttribute="trailing" secondItem="ZmB-ae-kd0" secondAttribute="trailing" id="uOd-x2-ZJ4"/>
-                    <constraint firstItem="ZmB-ae-kd0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="wvw-c7-ifM"/>
+                    <constraint firstItem="ZmB-ae-kd0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="wvw-c7-ifM"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
