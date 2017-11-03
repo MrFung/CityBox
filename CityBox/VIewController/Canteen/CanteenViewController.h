@@ -14,7 +14,6 @@ static NSString *const CanteenCellReuseId = @"CanteenCellReuseId";
 @interface CanteenViewController : BaseViewController <UITableViewDelegate, UITableViewDataSource, ApiServiceDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
-@property (weak, nonatomic) IBOutlet UIView *statusView;
 
 @property (nonatomic, strong) NSMutableArray *canteenInfos;
 

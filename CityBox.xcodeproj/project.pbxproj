@@ -49,6 +49,12 @@
 		E5507EFF1F9D81B000FB87C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5507EFA1F9D81B000FB87C6 /* LaunchScreen.storyboard */; };
 		E5507F001F9D81B000FB87C6 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5507EFC1F9D81B000FB87C6 /* Home.storyboard */; };
 		E55EDA351FA84B4B005D7BE1 /* Profile+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = E55EDA341FA84B4B005D7BE1 /* Profile+Utility.m */; };
+		E5A11C931FAC3FC300218718 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5A11C921FAC3FC300218718 /* MenuViewController.m */; };
+		E5A11C961FAC407400218718 /* MenuViewController+Configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = E5A11C951FAC407400218718 /* MenuViewController+Configuration.m */; };
+		E5A11C991FAC408B00218718 /* MenuViewController+LogicFlow.m in Sources */ = {isa = PBXBuildFile; fileRef = E5A11C981FAC408B00218718 /* MenuViewController+LogicFlow.m */; };
+		E5A11C9E1FAC40BD00218718 /* MenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E5A11C9C1FAC40BD00218718 /* MenuCell.m */; };
+		E5A11C9F1FAC40BD00218718 /* MenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5A11C9D1FAC40BD00218718 /* MenuCell.xib */; };
+		E5A11CA21FAC40E400218718 /* MenuInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E5A11CA11FAC40E400218718 /* MenuInfo.m */; };
 		E5D6A4D51F9DD1D0003C9C97 /* ScheduleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D6A4D41F9DD1D0003C9C97 /* ScheduleViewController.m */; };
 		E5D6A4D91F9DD253003C9C97 /* LibraryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D6A4D81F9DD253003C9C97 /* LibraryViewController.m */; };
 		E5D6A4DE1F9DDFB0003C9C97 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D6A4DD1F9DDFB0003C9C97 /* ProfileViewController.m */; };
@@ -164,6 +170,17 @@
 		E5507EFD1F9D81B000FB87C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Home.storyboard; sourceTree = "<group>"; };
 		E55EDA331FA84B4B005D7BE1 /* Profile+Utility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Profile+Utility.h"; sourceTree = "<group>"; };
 		E55EDA341FA84B4B005D7BE1 /* Profile+Utility.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Profile+Utility.m"; sourceTree = "<group>"; };
+		E5A11C911FAC3FC300218718 /* MenuViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		E5A11C921FAC3FC300218718 /* MenuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		E5A11C941FAC407400218718 /* MenuViewController+Configuration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MenuViewController+Configuration.h"; sourceTree = "<group>"; };
+		E5A11C951FAC407400218718 /* MenuViewController+Configuration.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MenuViewController+Configuration.m"; sourceTree = "<group>"; };
+		E5A11C971FAC408B00218718 /* MenuViewController+LogicFlow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MenuViewController+LogicFlow.h"; sourceTree = "<group>"; };
+		E5A11C981FAC408B00218718 /* MenuViewController+LogicFlow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MenuViewController+LogicFlow.m"; sourceTree = "<group>"; };
+		E5A11C9B1FAC40BD00218718 /* MenuCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuCell.h; sourceTree = "<group>"; };
+		E5A11C9C1FAC40BD00218718 /* MenuCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuCell.m; sourceTree = "<group>"; };
+		E5A11C9D1FAC40BD00218718 /* MenuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuCell.xib; sourceTree = "<group>"; };
+		E5A11CA01FAC40E400218718 /* MenuInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuInfo.h; sourceTree = "<group>"; };
+		E5A11CA11FAC40E400218718 /* MenuInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuInfo.m; sourceTree = "<group>"; };
 		E5D6A4D31F9DD1D0003C9C97 /* ScheduleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScheduleViewController.h; sourceTree = "<group>"; };
 		E5D6A4D41F9DD1D0003C9C97 /* ScheduleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScheduleViewController.m; sourceTree = "<group>"; };
 		E5D6A4D71F9DD253003C9C97 /* LibraryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LibraryViewController.h; sourceTree = "<group>"; };
@@ -335,6 +352,7 @@
 				E5507EB21F9D797600FB87C6 /* Login */,
 				E516F6F91F9DC81E00B81F63 /* Schedule */,
 				E5507EB31F9D799100FB87C6 /* Canteen */,
+				E5A11C901FAC3F8400218718 /* Menu */,
 				E5D6A4D61F9DD217003C9C97 /* Library */,
 				E5D6A4DB1F9DDF2E003C9C97 /* Profile */,
 			);
@@ -430,6 +448,8 @@
 			children = (
 				E5507EC01F9D7BAD00FB87C6 /* CanteenInfo.h */,
 				E5507EC11F9D7BAE00FB87C6 /* CanteenInfo.m */,
+				E5A11CA01FAC40E400218718 /* MenuInfo.h */,
+				E5A11CA11FAC40E400218718 /* MenuInfo.m */,
 				E54E1D001FA9A4CD00D95D2D /* LibraryInfo.h */,
 				E54E1D011FA9A4CD00D95D2D /* LibraryInfo.m */,
 			);
@@ -453,6 +473,30 @@
 				E5507EF31F9D7C7E00FB87C6 /* CanteenCell.xib */,
 			);
 			path = CanteenCell;
+			sourceTree = "<group>";
+		};
+		E5A11C901FAC3F8400218718 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				E5A11C911FAC3FC300218718 /* MenuViewController.h */,
+				E5A11C921FAC3FC300218718 /* MenuViewController.m */,
+				E5A11C941FAC407400218718 /* MenuViewController+Configuration.h */,
+				E5A11C951FAC407400218718 /* MenuViewController+Configuration.m */,
+				E5A11C971FAC408B00218718 /* MenuViewController+LogicFlow.h */,
+				E5A11C981FAC408B00218718 /* MenuViewController+LogicFlow.m */,
+				E5A11C9A1FAC409D00218718 /* MenuCell */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		E5A11C9A1FAC409D00218718 /* MenuCell */ = {
+			isa = PBXGroup;
+			children = (
+				E5A11C9B1FAC40BD00218718 /* MenuCell.h */,
+				E5A11C9C1FAC40BD00218718 /* MenuCell.m */,
+				E5A11C9D1FAC40BD00218718 /* MenuCell.xib */,
+			);
+			path = MenuCell;
 			sourceTree = "<group>";
 		};
 		E5D6A4D61F9DD217003C9C97 /* Library */ = {
@@ -650,6 +694,7 @@
 			files = (
 				E5E8C9841F9E048E005249CB /* README.md in Resources */,
 				E5D81DC91F9B4287000B2EE2 /* Assets.xcassets in Resources */,
+				E5A11C9F1FAC40BD00218718 /* MenuCell.xib in Resources */,
 				E54E1CFF1FA9A24000D95D2D /* LibraryCell.xib in Resources */,
 				E5507F001F9D81B000FB87C6 /* Home.storyboard in Resources */,
 				E5507EFF1F9D81B000FB87C6 /* LaunchScreen.storyboard in Resources */,
@@ -748,6 +793,7 @@
 				E516F6E51F9D9D2500B81F63 /* UINavigationController+Extend.m in Sources */,
 				E5E8C9791F9DE5AA005249CB /* LibraryViewController+Configuration.m in Sources */,
 				E54E1CFE1FA9A24000D95D2D /* LibraryCell.m in Sources */,
+				E5A11C9E1FAC40BD00218718 /* MenuCell.m in Sources */,
 				E5507EDD1F9D7BC100FB87C6 /* ApiResponse.m in Sources */,
 				E5D81DC71F9B4287000B2EE2 /* CityBox.xcdatamodeld in Sources */,
 				E5507EC21F9D7BAE00FB87C6 /* CanteenInfo.m in Sources */,
@@ -762,6 +808,7 @@
 				E516F6F81F9DC3F700B81F63 /* UIColor+Utility.m in Sources */,
 				E5D81DBE1F9B4287000B2EE2 /* AppDelegate.m in Sources */,
 				E5507ECB1F9D7BB900FB87C6 /* IphoneType.m in Sources */,
+				E5A11C991FAC408B00218718 /* MenuViewController+LogicFlow.m in Sources */,
 				E50EAF561FA83DE7006B1A24 /* Profile+Deserializer.m in Sources */,
 				E50EAF581FA83DE7006B1A24 /* Profile+DataManager.m in Sources */,
 				E5D6A4DE1F9DDFB0003C9C97 /* ProfileViewController.m in Sources */,
@@ -770,7 +817,10 @@
 				E5507EE61F9D7BCF00FB87C6 /* LoginViewController.m in Sources */,
 				E5507EDE1F9D7BC100FB87C6 /* ApiRequest.m in Sources */,
 				E54E1D021FA9A4CD00D95D2D /* LibraryInfo.m in Sources */,
+				E5A11C961FAC407400218718 /* MenuViewController+Configuration.m in Sources */,
 				E5D6A4D51F9DD1D0003C9C97 /* ScheduleViewController.m in Sources */,
+				E5A11C931FAC3FC300218718 /* MenuViewController.m in Sources */,
+				E5A11CA21FAC40E400218718 /* MenuInfo.m in Sources */,
 				E5507EF01F9D7C7700FB87C6 /* CanteenViewController+Configuration.m in Sources */,
 				E50EAF6A1FA845C3006B1A24 /* DMCache+CoreDataProperties.m in Sources */,
 				E516F6F51F9DC30F00B81F63 /* UIView+Utility.m in Sources */,
