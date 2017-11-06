@@ -13,9 +13,9 @@
 
 #pragma mark - Public Methods
 
-//- (void)loadData {
-//  [self requestLoadCanteen];
-//}
+- (void)loadData {
+  [self requestLoadCanteen];
+}
 
 #pragma mark - ApiServiceDelegate
 
@@ -59,9 +59,9 @@
 
 #pragma mark - Private Methods
 
-//- (void)requestLoadCanteen {
-//  ApiRequest *request = [ApiRequest requestForMenu:<#(NSString *)#>];
-//  [[ApiService serviceWithDelegate:self] sendCanteenJSONRequest:request];
-//}
+- (void)requestLoadCanteen {
+  ApiRequest *request = [ApiRequest requestForMenu:@""];
+  [[ApiService serviceWithDelegate:self] sendMenuJSONRequest:request];
+}
 
 @end

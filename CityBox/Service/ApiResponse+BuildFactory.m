@@ -62,6 +62,18 @@
   return response;
 }
 
++ (instancetype)responseWithMenuDictionary:(NSDictionary *)dictionary responseCode:(NSInteger)responseCode error:(NSError *)error {
+  ApiResponse *response = [[self alloc] init];
+  if (error || ![dictionary isKindOfClass:[NSDictionary class]]) {
+    response.code = responseCode;
+    response.errorMessage = @"无法连接服务器!";
+  } else {
+    response.code = API_RESPONSE_CODE_SUCCESS;
+    response.data = dictionary[@"data"];
+  }
+  return response;
+}
+
 + (instancetype)responseWithLibraryDictionary:(NSDictionary *)dictionary responseCode:(NSInteger)responseCode error:(NSError *)error {
   ApiResponse *response = [[self alloc] init];
   if (error || ![dictionary isKindOfClass:[NSDictionary class]]) {

@@ -56,6 +56,16 @@
   }];
 }
 
+- (void)sendMenuJSONRequest:(ApiRequest *)apiRequest {
+  [self sendRequest:apiRequest withCompletion:^(id dictionary, NSInteger responseCode, NSError *error) {
+    ApiResponse *apiResponse = nil;
+    
+    apiResponse = [ApiResponse responseWithMenuDictionary:dictionary responseCode:responseCode error:error];
+    
+    [self.delegate service:self didFinishRequest:apiRequest withResponse:apiResponse];
+  }];
+}
+
 - (void)sendLibraryJSONRequest:(ApiRequest *)apiRequest {
   [self sendRequest:apiRequest withCompletion:^(id dictionary, NSInteger responseCode, NSError *error) {
     ApiResponse *apiResponse = nil;

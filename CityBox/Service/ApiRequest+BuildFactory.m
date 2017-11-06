@@ -11,7 +11,7 @@
 #define PATH_LOGIN @"http://123.206.60.17:5000/api/login"
 #define PATH_LIBRARY @"http://123.206.60.17/csxyxzs-master/index.php/Home/Campus/appLibrary/title/"
 #define PATH_CANTEEN @"http://123.206.60.17/csxyxzs-master/index.php/Home/Campus/appShitang"
-#define PATH_MENU @"http://123.206.60.17/csxyxzs-master/index.php/Home/Campus/appCaidan"
+#define PATH_MENU @"http://123.206.60.17/csxyxzs-master/index.php/Home/Campus/appCaidan/id/"
 #define PATH_GRADE @"http://123.206.60.17:5000/api/grade"
 #define PATH_CLASSSCHEDULE @"http://123.206.60.17:5000/api/schedule"
 
@@ -45,9 +45,11 @@
 }
 
 + (instancetype)requestForMenu:(NSString *)menuId {
-  ApiRequest *request = [self requestWithPath:PATH_MENU];
+  NSString *requestUrl = [NSString stringWithFormat:@"%@%@", PATH_MENU, menuId];
+  ApiRequest *request = [self requestWithPath:requestUrl];
   request.type = ApiRequestTypeMenu;
-  request.parameters = [NSDictionary dictionaryWithObjects:@[menuId] forKeys:@[@"id"]];
+  request.method = ApiRequestMethodGet;
+  //request.parameters = [NSDictionary dictionaryWithObjects:@[menuId] forKeys:@[@"id"]];
   
   return request;
 }

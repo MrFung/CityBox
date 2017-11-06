@@ -14,6 +14,7 @@
 + (instancetype)responseWithCanteenJSON:(NSString *)json error:(NSError *)error;
 + (instancetype)responseWithLoginDictionary:(NSDictionary *)dictionary responseCode:(NSInteger)responseCode error:(NSError *)error;
 + (instancetype)responseWithCanteenDictionary:(NSDictionary *)dictionary responseCode:(NSInteger)responseCode error:(NSError *)error;
++ (instancetype)responseWithMenuDictionary:(NSDictionary *)dictionary responseCode:(NSInteger)responseCode error:(NSError *)error;
 + (instancetype)responseWithLibraryDictionary:(NSDictionary *)dictionary responseCode:(NSInteger)responseCode error:(NSError *)error;
 
 @end
