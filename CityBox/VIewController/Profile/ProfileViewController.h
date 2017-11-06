@@ -7,7 +7,14 @@
 //
 
 #import "BaseViewController.h"
+#import "profileInfo.h"
 
-@interface ProfileViewController : BaseViewController
+@interface ProfileViewController : BaseViewController <UITableViewDataSource, UITableViewDelegate>
+
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+
+@property (nonatomic, strong) ProfileInfo *profileInfo;
+
+@property (nonatomic, strong) NSMutableArray *groupInfos;
 
 @end

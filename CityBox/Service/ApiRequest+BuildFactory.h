@@ -17,4 +17,6 @@
 + (instancetype)requestForGrade:(NSString *)username password:(NSString *)password time:(NSString *)termstring action:(NSString *)action;
 + (instancetype)requestForClassSchedule:(NSString *)username password:(NSString *)password action:(NSString *)action;
 
++ (NSString *)urlForUniversityPanorama;
+
 @end

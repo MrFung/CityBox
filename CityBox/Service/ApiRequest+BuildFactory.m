@@ -14,6 +14,7 @@
 #define PATH_MENU @"http://123.206.60.17/csxyxzs-master/index.php/Home/Campus/appCaidan/id/"
 #define PATH_GRADE @"http://123.206.60.17:5000/api/grade"
 #define PATH_CLASSSCHEDULE @"http://123.206.60.17:5000/api/schedule"
+#define PATH_UNIVERSITY_PANARAMA @"http://720yun.com/t/a9625wa6xnw?from=singlemessage&openSpeakModal=true&pano_id=62962"
 
 @implementation ApiRequest (BuildFactory)
 
@@ -68,6 +69,12 @@
   request.parameters = [NSDictionary dictionaryWithObjects:@[username, password, action] forKeys:@[@"username", @"password", @"action"]];
   
   return request;
+}
+
+#pragma mark - URLs
+
++ (NSString *)urlForUniversityPanorama {
+  return PATH_UNIVERSITY_PANARAMA;
 }
 
 #pragma mark - Private Methods
