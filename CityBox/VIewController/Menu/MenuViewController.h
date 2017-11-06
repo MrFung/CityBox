@@ -16,7 +16,9 @@ static NSString *const MenuCellReuseId = @"MenuCellReuseId";
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @property (nonatomic, strong) NSMutableArray *menuInfos;
+@property (nonatomic, assign) NSInteger menuId;
 
+- (void)idForMenu:(NSInteger)row;
 - (void)reloadDatas;
 
 @end

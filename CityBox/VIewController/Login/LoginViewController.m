@@ -28,12 +28,12 @@
 - (void)viewDidLoad {
   [super viewDidLoad];
   [self configureView];
-  [self checkShowNextView];
+  //[self checkShowNextView];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
   [super viewDidAppear:animated];
-  [self popGestureRecognizerDisable];
+  //[self popGestureRecognizerDisable];
   [self updateKeyboardManagerWithPreviousNextHidden:NO];
   [self updateKeyboardManagerWithBottomHeight:100];
 }
@@ -48,7 +48,7 @@
 
 - (IBAction)loginButtonClicked:(id)sender {
   [BaseViewController resetTabThenSelectedHome];
-  [self login];
+  //[self login];
 }
 
 - (IBAction)viewTouchDown:(id)sender {

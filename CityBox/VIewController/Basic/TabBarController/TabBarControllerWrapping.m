@@ -42,7 +42,7 @@
   
   UINavigationController *canteenViewController = [UINavigationController wrappingRootController:[CanteenViewController create]];
   UIImage *canteenVCImage = [UIImage imageNamed:@"tabbar_canteen_unselected"];
-  UIImage *canteenVCHLImage = [UIImage imageNamed:@""];
+  UIImage *canteenVCHLImage = [UIImage imageNamed:@"tabbar_canteen"];
   UITabBarItem *canteenTabBarItem = [[UITabBarItem alloc] initWithTitle:@"食堂" image:canteenVCImage selectedImage:canteenVCHLImage];
   canteenTabBarItem.tag = 2;
   canteenViewController.tabBarItem = canteenTabBarItem;

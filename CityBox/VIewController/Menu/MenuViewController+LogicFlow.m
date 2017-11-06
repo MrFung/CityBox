@@ -14,15 +14,15 @@
 #pragma mark - Public Methods
 
 - (void)loadData {
-  [self requestLoadCanteen];
+  [self requestLoadMenu];
 }
 
 #pragma mark - ApiServiceDelegate
 
 - (void)service:(ApiService *)service didFinishRequest:(ApiRequest *)request withResponse:(ApiResponse *)response {
   switch (request.type) {
-    case ApiRequestTypeCanteen:
-      [self handleLoadCanteenResponse:response];
+    case ApiRequestTypeMenu:
+      [self handleLoadMenuResponse:response];
       break;
       
     default:
@@ -30,22 +30,19 @@
   }
 }
 
-- (void)handleLoadCanteenResponse:(ApiResponse *)response {
+- (void)handleLoadMenuResponse:(ApiResponse *)response {
   if ([response isSucceed]) {
     if ([MenuInfo validateArrayData:response.data]) {
       [self.menuInfos removeAllObjects];
       
-      NSArray *resultArray = response.data;
-      for (NSDictionary *item in resultArray) {
-        NSArray *tempArray = item[@"data"];
-        for (NSDictionary *subItem in tempArray) {
-          if ([MenuInfo validateDictionaryData:subItem]) {
-            MenuInfo *menuInfo = [MenuInfo menuInfoWithData:subItem];
-            [self.menuInfos addObject:menuInfo];
+      NSArray *menuItem = response.data;
+      for (NSDictionary *menuInfoData in menuItem) {
+        if ([MenuInfo validateDictionaryData:menuInfoData]) {
+          MenuInfo *menuInfo = [MenuInfo menuInfoWithData:menuInfoData];
+          [self.menuInfos addObject:menuInfo];
           } else {
             NSLog(@"数据结构错误");
           }
-        }
       }
     } else {
       NSLog(@"数据结构错误");
@@ -59,8 +56,10 @@
 
 #pragma mark - Private Methods
 
-- (void)requestLoadCanteen {
-  ApiRequest *request = [ApiRequest requestForMenu:@""];
+- (void)requestLoadMenu {
+  NSString *str = [NSString stringWithFormat:@"%ld", (long)self.menuId];
+  NSString *menuId = [str stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
+  ApiRequest *request = [ApiRequest requestForMenu:menuId];
   [[ApiService serviceWithDelegate:self] sendMenuJSONRequest:request];
 }
 

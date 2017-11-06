@@ -9,6 +9,7 @@
 #import "CanteenViewController.h"
 #import "CanteenViewController+Configuration.h"
 #import "CanteenViewController+LogicFlow.h"
+#import "MenuViewController.h"
 #import "CanteenCell.h"
 #import "UIView+FrameMethods.h"
 #import "IphoneType.h"
@@ -63,15 +64,15 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-  switch (indexPath.row) {
-    case 0:
-      [self cleanUpForUserDataWithCompletion:nil];
-      [BaseViewController showLoginView];
-      break;
-      
-    default:
-      break;
-  }
+  [self showMenuView:indexPath];
+}
+
+#pragma mark - Private Methods
+
+- (void)showMenuView:(NSIndexPath *)indexPath {
+  MenuViewController *menuViewController = [MenuViewController create];
+  [menuViewController idForMenu:indexPath.row + 1];
+  [self.navigationController pushViewController:menuViewController animated:YES];
 }
 
 @end

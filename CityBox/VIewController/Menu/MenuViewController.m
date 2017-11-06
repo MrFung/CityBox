@@ -29,10 +29,25 @@
   [self configureView];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+  [super viewWillAppear:animated];
+  [self loadData];
+}
+
+#pragma mark - IBAction Methods
+
+- (IBAction)backClicked:(id)sender {
+  [self.navigationController popViewControllerAnimated:YES];
+}
+
 #pragma mark - Public Methods
 
 - (void)reloadDatas {
   [self.tableView reloadData];
+}
+
+- (void)idForMenu:(NSInteger)row {
+  self.menuId = row;
 }
 
 #pragma mark - UITableViewDataSource

@@ -85,7 +85,7 @@
         <!--Menu View Controller-->
         <scene sceneID="b50-k9-UWg">
             <objects>
-                <viewController storyboardIdentifier="MenuViewController" id="zCS-so-Zev" customClass="MenuViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MenuViewController" hidesBottomBarWhenPushed="YES" id="zCS-so-Zev" customClass="MenuViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="QTc-zB-oGR"/>
                         <viewControllerLayoutGuide type="bottom" id="lKP-DZ-VBa"/>
@@ -111,20 +111,33 @@
                                             <constraint firstAttribute="height" constant="1" id="KMe-tR-dMO"/>
                                         </constraints>
                                     </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="菜单" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3xS-8M-VQe">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="菜单" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3xS-8M-VQe" userLabel="Title Label">
                                         <rect key="frame" x="170" y="11.5" width="35" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zEf-qK-JfH" userLabel="Back Button">
+                                        <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="44" id="CUE-e2-wOq"/>
+                                        </constraints>
+                                        <state key="normal" image="back_blue"/>
+                                        <connections>
+                                            <action selector="backClicked:" destination="zCS-so-Zev" eventType="touchUpInside" id="q7M-8v-Opw"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="XiH-bq-dWI" firstAttribute="leading" secondItem="S3G-fn-Y3h" secondAttribute="leading" id="3LZ-a8-C4d"/>
                                     <constraint firstAttribute="height" constant="44" id="9RJ-dR-Di5"/>
+                                    <constraint firstItem="zEf-qK-JfH" firstAttribute="top" secondItem="S3G-fn-Y3h" secondAttribute="top" id="UdT-eK-gN5"/>
                                     <constraint firstAttribute="bottom" secondItem="XiH-bq-dWI" secondAttribute="bottom" id="Xnd-oj-Oz5"/>
                                     <constraint firstAttribute="trailing" secondItem="XiH-bq-dWI" secondAttribute="trailing" id="bt3-n2-Usk"/>
+                                    <constraint firstItem="zEf-qK-JfH" firstAttribute="leading" secondItem="S3G-fn-Y3h" secondAttribute="leading" id="dtl-M1-F18"/>
                                     <constraint firstItem="3xS-8M-VQe" firstAttribute="centerY" secondItem="S3G-fn-Y3h" secondAttribute="centerY" id="otv-GS-A25"/>
+                                    <constraint firstAttribute="bottom" secondItem="zEf-qK-JfH" secondAttribute="bottom" id="pfx-UA-RUo"/>
                                     <constraint firstItem="3xS-8M-VQe" firstAttribute="centerX" secondItem="S3G-fn-Y3h" secondAttribute="centerX" id="zZn-wM-vu5"/>
                                 </constraints>
                             </view>
@@ -298,4 +311,7 @@
             <point key="canvasLocation" x="-10041" y="9"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="back_blue" width="12" height="20"/>
+    </resources>
 </document>
