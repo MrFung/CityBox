@@ -7,7 +7,9 @@
 //
 
 #import "BaseViewController.h"
-#import "profileInfo.h"
+#import "ProfileInfo.h"
+
+static NSString *const ProfileCellReuseId = @"ProfileCellReuseId";
 
 @interface ProfileViewController : BaseViewController <UITableViewDataSource, UITableViewDelegate>
 

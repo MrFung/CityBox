@@ -9,6 +9,7 @@
 #import "ProfileViewController.h"
 #import "ProfileViewController+Configuration.h"
 #import "UIWebViewController.h"
+#import "ProfileCell.h"
 #import "GroupInfo.h"
 #import "UIColor+Utility.h"
 
@@ -41,14 +42,11 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-  static NSString *ProfileCellReuseId = @"ProfileCellReuseId";
-  
-  GroupInfo *groupInfo = [self.groupInfos objectAtIndex:indexPath.section];
+  GroupInfo *groupInfo = [self.groupInfos objectAtIndex:(indexPath.section)];
   ProfileInfo *profileInfo = [groupInfo.profileInfos objectAtIndex:indexPath.row];
-  UITableViewCell *profileCell = [tableView dequeueReusableCellWithIdentifier:ProfileCellReuseId];
-  profileCell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ProfileCellReuseId];
-  profileCell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-  profileCell.textLabel.text = profileInfo.title;
+  
+  ProfileCell *profileCell = [tableView dequeueReusableCellWithIdentifier:ProfileCellReuseId forIndexPath:indexPath];
+  [profileCell updateCellWithProfileInfo:profileInfo];
   
   return profileCell;
 }

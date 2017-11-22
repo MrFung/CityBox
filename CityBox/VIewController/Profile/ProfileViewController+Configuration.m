@@ -33,6 +33,8 @@
 - (void)configureTableView {
   self.tableView.delegate = self;
   self.tableView.dataSource = self;
+  
+  [self.tableView registerNib:[UINib nibWithNibName:@"ProfileCell" bundle:nil] forCellReuseIdentifier:ProfileCellReuseId];
 }
 
 - (void)initData {
