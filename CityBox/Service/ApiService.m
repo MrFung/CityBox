@@ -46,6 +46,16 @@
   }];
 }
 
+- (void)sendNewsJSONRequest:(ApiRequest *)apiRequest {
+  [self sendRequest:apiRequest withCompletion:^(id dictionary, NSInteger responseCode, NSError *error) {
+    ApiResponse *apiResponse = nil;
+    
+    apiResponse = [ApiResponse responseWithNewsDictionary:dictionary responseCode:responseCode error:error];
+    
+    [self.delegate service:self didFinishRequest:apiRequest withResponse:apiResponse];
+  }];
+}
+
 - (void)sendCanteenJSONRequest:(ApiRequest *)apiRequest {
   [self sendRequest:apiRequest withCompletion:^(id dictionary, NSInteger responseCode, NSError *error) {
     ApiResponse *apiResponse = nil;

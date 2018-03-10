@@ -21,6 +21,7 @@
 + (id)serviceWithTag:(NSInteger)tag delegate:(id <ApiServiceDelegate>)delegate;
 
 - (void)sendLoginJSONRequest:(ApiRequest *)apiRequest;
+- (void)sendNewsJSONRequest:(ApiRequest *)apiRequest;
 - (void)sendCanteenJSONRequest:(ApiRequest *)apiRequest;
 - (void)sendMenuJSONRequest:(ApiRequest *)apiRequest;
 - (void)sendLibraryJSONRequest:(ApiRequest *)apiRequest;

@@ -18,6 +18,7 @@
 
 - (void)configureView {
   [self configureWebView];
+  [self configureTitleLabel];
 }
 
 #pragma mark - Private Methods
@@ -29,6 +30,10 @@
   self.webView.scrollView.showsHorizontalScrollIndicator = NO;
   
   self.automaticallyAdjustsScrollViewInsets = NO;
+}
+
+- (void)configureTitleLabel {
+  self.titleLabel.text = self.title;
 }
 
 @end

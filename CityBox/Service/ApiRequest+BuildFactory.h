@@ -15,7 +15,7 @@
 + (instancetype)requestForCanteen;
 + (instancetype)requestForMenu:(NSString *)menuId;
 + (instancetype)requestForGrade:(NSString *)username password:(NSString *)password time:(NSString *)termstring action:(NSString *)action;
-+ (instancetype)requestForClassSchedule:(NSString *)username password:(NSString *)password action:(NSString *)action;
++ (instancetype)requestForNews;
 
 + (NSString *)urlForUniversityPanorama;
 

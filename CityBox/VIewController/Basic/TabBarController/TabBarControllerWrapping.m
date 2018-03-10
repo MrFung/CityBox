@@ -7,7 +7,7 @@
 //
 
 #import "TabBarControllerWrapping.h"
-#import "ScheduleViewController.h"
+#import "NewsViewController.h"
 #import "CanteenViewController.h"
 #import "LibraryViewController.h"
 #import "ProfileViewController.h"
@@ -33,10 +33,10 @@
   self.tabBarController.delegate = self;
   [self.tabBarController.tabBar topBorderWithColor:[UIColor mainGrayColor] height:0.5];
   
-  UINavigationController *scheduleViewController = [UINavigationController wrappingRootController:[ScheduleViewController create]];
+  UINavigationController *scheduleViewController = [UINavigationController wrappingRootController:[NewsViewController create]];
   UIImage *scheduleVCImage = [UIImage imageNamed:@"tabbar_schedule_unselected"];
   UIImage *scheduleVCHLImage = [UIImage imageNamed:@"tabbar_schedule"];
-  UITabBarItem *scheduleTabBarItem = [[UITabBarItem alloc] initWithTitle:@"课表" image:scheduleVCImage selectedImage:scheduleVCHLImage];
+  UITabBarItem *scheduleTabBarItem = [[UITabBarItem alloc] initWithTitle:@"新闻" image:scheduleVCImage selectedImage:scheduleVCHLImage];
   scheduleTabBarItem.tag = 1;
   scheduleViewController.tabBarItem = scheduleTabBarItem;
   

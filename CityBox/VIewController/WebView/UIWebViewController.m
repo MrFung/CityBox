@@ -58,7 +58,7 @@
 #pragma mark - Private Methods
 
 - (void)loadWebView {
-  NSURL *url = [NSURL URLWithString:[ApiRequest urlForUniversityPanorama]];
+  NSURL *url = [NSURL URLWithString:self.urlString];
   NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
   
   [self.webView loadRequest:request];

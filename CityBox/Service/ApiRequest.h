@@ -14,7 +14,7 @@ typedef enum {
   ApiRequestTypeCanteen,            //食堂
   ApiRequestTypeMenu,                //菜单
   ApiRequestTypeGrade,                //成绩
-  ApiRequestTypeClassSchedule,  //课程表
+  ApiRequestTypeNews,                 //新闻
 } ApiRequestType;
 
 typedef enum {

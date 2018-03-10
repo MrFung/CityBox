@@ -9,6 +9,7 @@
 #import "ProfileViewController.h"
 #import "ProfileViewController+Configuration.h"
 #import "UIWebViewController.h"
+#import "ApiRequest+BuildFactory.h"
 #import "ProfileCell.h"
 #import "GroupInfo.h"
 #import "UIColor+Utility.h"
@@ -87,6 +88,8 @@
 
 - (void)showWebView {
   UIWebViewController *webViewController = [UIWebViewController create];
+  webViewController.title = @"学校全景";
+  webViewController.urlString = [ApiRequest urlForUniversityPanorama];
   
   [self.navigationController pushViewController:webViewController animated:YES];
 }

@@ -13,7 +13,8 @@
 #define PATH_CANTEEN @"http://123.206.60.17/csxyxzs-master/index.php/Home/Campus/appShitang"
 #define PATH_MENU @"http://123.206.60.17/csxyxzs-master/index.php/Home/Campus/appCaidan/id/"
 #define PATH_GRADE @"http://123.206.60.17:5000/api/grade"
-#define PATH_CLASSSCHEDULE @"http://123.206.60.17:5000/api/schedule"
+//#define PATH_CLASSSCHEDULE @"http://123.206.60.17:5000/api/schedule"
+#define PATH_NEWS @"http://v.juhe.cn/toutiao/index?type=top&key=722a4aa064e87da8e07848b8971d893a"
 #define PATH_UNIVERSITY_PANARAMA @"http://720yun.com/t/a9625wa6xnw?from=singlemessage&openSpeakModal=true&pano_id=62962"
 
 @implementation ApiRequest (BuildFactory)
@@ -63,10 +64,11 @@
   return request;
 }
 
-+ (instancetype)requestForClassSchedule:(NSString *)username password:(NSString *)password action:(NSString *)action {
-  ApiRequest *request = [self requestWithPath:PATH_CLASSSCHEDULE];
-  request.type = ApiRequestTypeClassSchedule;
-  request.parameters = [NSDictionary dictionaryWithObjects:@[username, password, action] forKeys:@[@"username", @"password", @"action"]];
++ (instancetype)requestForNews {
+  ApiRequest *request = [self requestWithPath:PATH_NEWS];
+  request.type = ApiRequestTypeNews;
+  request.method = ApiRequestMethodGet;
+  //request.parameters = [NSDictionary dictionaryWithObjects:@[type, key] forKeys:@[@"type", @"key"]];
   
   return request;
 }

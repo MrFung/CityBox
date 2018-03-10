@@ -1,25 +1,24 @@
 //
-//  LibraryViewController+Configuration.m
+//  NewsViewController+Configuration.m
 //  CityBox
 //
 //  Created by 郭枫 on 2017/10/23.
 //  Copyright © 2017年 郭枫. All rights reserved.
 //
 
-#import "LibraryViewController+Configuration.h"
+#import "NewsViewController+Configuration.h"
 
-@implementation LibraryViewController (Configuration)
+@implementation NewsViewController (Configuration)
 
 #pragma mark - Public Methods
 
 - (void)initProperties {
-  self.libraryInfos = [NSMutableArray array];
+  self.newsInfos = [NSMutableArray array];
 }
 
 - (void)configureView {
   [self configureViewEdges];
   [self configureTableView];
-  [self configureSearchBar];
 }
 
 #pragma mark - Private Methods
@@ -33,11 +32,7 @@
   self.tableView.delegate = self;
   self.tableView.dataSource = self;
   
-  [self.tableView registerNib:[UINib nibWithNibName:@"LibraryCell" bundle:nil] forCellReuseIdentifier:LibraryCellReuseId];
-}
-
-- (void)configureSearchBar {
-  self.searchBar.delegate = self;
+  [self.tableView registerNib:[UINib nibWithNibName:@"NewsCell" bundle:nil] forCellReuseIdentifier:NewsCellReuseId];
 }
 
 @end
