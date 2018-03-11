@@ -7,6 +7,7 @@
 //
 
 #import "NewsCell.h"
+#import "UIImageView+WebCache.h"
 
 @implementation NewsCell
 
@@ -27,7 +28,7 @@
   self.title.text = self.newsInfo.title;
   self.author.text = self.newsInfo.author;
   self.time.text = self.newsInfo.time;
-  self.image.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:self.newsInfo.picture]]];
+  [self.newsImageView sd_setImageWithURL:[NSURL URLWithString:self.newsInfo.picture] placeholderImage:[UIImage imageNamed:@"company_default"]];
 }
 
 @end

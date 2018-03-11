@@ -37,7 +37,7 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ycy-qM-M9i">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ycy-qM-M9i" userLabel="ImageView">
                         <rect key="frame" x="305" y="10" width="50" height="50"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="50" id="1xL-X5-LEY"/>
@@ -61,7 +61,7 @@
             <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
             <connections>
                 <outlet property="author" destination="MKp-SJ-Za3" id="fuB-eQ-xaW"/>
-                <outlet property="image" destination="ycy-qM-M9i" id="5zv-KP-jea"/>
+                <outlet property="newsImageView" destination="ycy-qM-M9i" id="K3E-Hi-nKC"/>
                 <outlet property="time" destination="zqv-H3-RcW" id="3NP-9w-4rK"/>
                 <outlet property="title" destination="YH4-oH-z0K" id="eRT-Ne-S5J"/>
             </connections>

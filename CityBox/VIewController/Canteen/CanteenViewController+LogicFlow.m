@@ -48,6 +48,9 @@
           }
         }
       }
+      
+       [self reloadDatas];
+      
     } else {
       NSLog(@"数据结构错误");
     }
@@ -55,7 +58,7 @@
     NSLog(@"%@", response.errorMessage);
   }
   
-  [self reloadDatas];
+  [self stopRefresh];
 }
 
 #pragma mark - Private Methods

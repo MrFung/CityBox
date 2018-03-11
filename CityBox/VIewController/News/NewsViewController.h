@@ -22,5 +22,7 @@ static NSString *const NewsCellReuseId = @"NewsCellReuseId";
 @property (nonatomic, strong) NSMutableArray *newsInfos;
 
 - (void)reloadDatas;
+- (void)loadNewDatas;
+- (void)stopRefresh;
 
 @end

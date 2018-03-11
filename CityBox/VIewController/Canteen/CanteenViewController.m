@@ -43,6 +43,17 @@
   [self.tableView reloadData];
 }
 
+- (void)loadNewDatas {
+  [self loadData];
+  [self.tableView.mj_header beginRefreshing];
+  self.tableView.mj_header.hidden = YES;
+}
+
+- (void)stopRefresh {
+  [self.tableView.mj_header endRefreshing];
+  self.tableView.mj_header.hidden = NO;
+}
+
 #pragma mark - UITableViewDataSource
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {

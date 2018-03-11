@@ -9,6 +9,7 @@
 #import "BaseViewController.h"
 #import "MBProgressHUD.h"
 #import "UINavigationController+Extend.h"
+#import "UIColor+Utility.h"
 #import "TabBarControllerWrapping.h"
 #import "LoginViewController.h"
 #import "DataManager.h"
@@ -75,6 +76,20 @@ NSInteger const Tabbar_Library_Page_Index = 2;
 }
 
 #pragma mark - Refresh Configure
+
+- (MJRefreshHeader *)configureHeaderRefreshWithTarget:(id)target refreshingAction:(SEL)action {
+  MJRefreshNormalHeader *mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:target refreshingAction:action];
+  mj_header.lastUpdatedTimeLabel.hidden = YES;
+  
+  [mj_header setTitle:@"下拉刷新" forState:MJRefreshStateIdle];
+  [mj_header setTitle:@"释放刷新" forState:MJRefreshStatePulling];
+  [mj_header setTitle:@"加载中..." forState:MJRefreshStateRefreshing];
+  
+  mj_header.stateLabel.font = [UIFont systemFontOfSize:12];
+  mj_header.stateLabel.textColor = [UIColor colorWithHexString:@"B3B3B3" alpha:1.f];
+  
+  return mj_header;
+}
 
 - (void)toast:(NSString *)message {
   [self toast:message delay:1.5f];

@@ -33,6 +33,8 @@
   self.tableView.dataSource = self;
   
   [self.tableView registerNib:[UINib nibWithNibName:@"CanteenCell" bundle:nil] forCellReuseIdentifier:CanteenCellReuseId];
+  
+  self.tableView.mj_header = [self configureHeaderRefreshWithTarget:self refreshingAction:@selector(loadNewDatas)];
 }
 
 @end

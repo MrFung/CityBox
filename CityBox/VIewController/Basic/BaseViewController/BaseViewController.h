@@ -23,6 +23,8 @@ typedef NS_ENUM(NSInteger, StoryboardName) {
 + (void)showLoginView;
 + (void)resetTabThenSelectedHome;
 
+- (MJRefreshHeader *)configureHeaderRefreshWithTarget:(id)target refreshingAction:(SEL)action;
+
 - (void)toast:(NSString *)message;
 - (void)toast:(NSString *)message delay:(CGFloat)delay;
 

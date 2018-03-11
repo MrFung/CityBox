@@ -18,6 +18,8 @@ static NSString *const CanteenCellReuseId = @"CanteenCellReuseId";
 @property (nonatomic, strong) NSMutableArray *canteenInfos;
 
 - (void)reloadDatas;
+- (void)loadNewDatas;
+- (void)stopRefresh;
 
 @end
 

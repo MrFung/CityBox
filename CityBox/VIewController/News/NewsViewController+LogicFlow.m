@@ -43,6 +43,9 @@
           [self toast:@"数据结构错误"];
         }
       }
+      
+      [self reloadDatas];
+      
     } else {
       [self toast:@"数据结构错误"];
     }
@@ -50,7 +53,7 @@
     NSLog(@"%@", response.errorMessage);
   }
 
-  [self reloadDatas];
+  [self stopRefresh];
 }
 
 #pragma mark - Private Methods
