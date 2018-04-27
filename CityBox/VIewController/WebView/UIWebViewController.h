@@ -14,7 +14,7 @@
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
 @property (weak, nonatomic) IBOutlet UIProgressView *progressView;
 
-@property (nonatomic, copy) NSString *title;
+@property (nonatomic, copy) NSString *titleString;
 @property (nonatomic, copy) NSString *urlString;
 @property (nonatomic, strong) NSTimer *progressTimer;
 @property (nonatomic, assign) BOOL isFinished;

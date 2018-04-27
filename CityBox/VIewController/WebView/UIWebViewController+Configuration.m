@@ -33,7 +33,7 @@
 }
 
 - (void)configureTitleLabel {
-  self.titleLabel.text = self.title;
+  self.titleLabel.text = self.titleString;
 }
 
 @end
